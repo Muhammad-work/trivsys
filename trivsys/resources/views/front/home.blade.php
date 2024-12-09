@@ -6,7 +6,7 @@
 @section('home')
     {{-- Hero section start --}}
     <section class="w-full h-auto md:h-[600px] bg-cover bg-center bg-no-repeat py-6"
-        style="background-image: url({{ asset('storage/img/section.webp') }});">
+        style="background-image: url({{ asset('storage/img/section2.gif') }});">
         <div class="w-full h-full flex flex-col justify-center items-start gap-3 px-5 md:px-[5%]">
             <h1 class="text-4xl md:text-5xl font-bold text-[#fff]">Revolutionizing</h1>
             <h1 class="text-4xl md:text-5xl font-bold text-[#EB7422] animationText"></h1>
@@ -19,8 +19,9 @@
                     platforms.
                 </p>
             </div>
-            <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium mt-3"><a href="{{ route('contact') }}">Contact Us </a><span
-                    class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span></button>
+            <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium mt-3"><a
+                    href="{{ route('contact') }}">Contact Us </a><span class="text-[red]"><i
+                        class="fa-solid fa-arrow-right"></i> </span></button>
         </div>
     </section>
     {{-- Hero section end --}}
@@ -115,76 +116,79 @@
         <div class="w-full h-auto flex flex-wrap justify-center gap-6 mt-[5rem]">
             <!-- iPhone App Development Card -->
             <div class="w-full sm:w-[300px] px-2 cursor-pointer app-development py-2">
-                <span class="span"></span>
-                <span class="span2"></span>
-                <div class="flex h-auto place-items-center cursor-pointer">
-                    <div class="services-img">
-                        <img class="max-w-full" src="{{ asset('storage/img/a.gif') }}" alt="">
+                <a href="{{ route('crm') }}">
+                    <div class="flex h-auto place-items-center cursor-pointer">
+                        <div class="services-img">
+                            <img class="max-w-[90%]" src="{{ asset('storage/img/a.gif') }}" alt="">
+                        </div>
+                        <div class="p">
+                            <p class="font-bold text-lg">CRM <br> Software</p>
+                        </div>
                     </div>
-                    <div class="p">
-                        <p class="font-bold text-lg">IPhone App <br> Development</p>
+                    <div class="services-text">
+                        <p class="font-bold text-lg">CRM <br> Software</p>
+                        <p class="mt-2">RetroCube is a renowned iPhone app development company that provides top-notch
+                            iOS app development services.</p>
                     </div>
-                </div>
-                <div class="services-text">
-                    <p class="font-bold text-lg">IPhone App <br> Development</p>
-                    <p class="mt-2">RetroCube is a renowned iPhone app development company that provides top-notch
-                        iOS app development services.</p>
-                </div>
+                </a>
+
             </div>
 
             <!-- Custom Game Development Card -->
-            <div class="w-full sm:w-[300px] px-2 cursor-pointer app-development py-2">
-                <span class="span"></span>
-                <span class="span2"></span>
-                <div class="flex h-auto place-items-center cursor-pointer">
-                    <div class="services-img">
-                        <img class="max-w-full" src="{{ asset('storage/img/b.gif') }}" alt="">
+            <div class="w-full sm:w-[300px] px-2 cursor-pointer app-development ">
+                <a href="{{ route('erp') }}">
+                    <div class="flex h-auto place-items-center cursor-pointer">
+                        <div class="services-img">
+                            <img class="max-w-[90%]" src="{{ asset('storage/img/b.gif') }}" alt="">
+                        </div>
+                        <div class="p">
+                            <p class="font-bold text-lg">ERP Software</p>
+                        </div>
                     </div>
-                    <div class="p">
-                        <p class="font-bold text-lg">Custom Game <br> Development</p>
+                    <div class="services-text">
+                        <p class="font-bold text-lg">ERP Software</p>
+                        <p class="mt-2">The most demanding game service! We bring your gaming experiences that stem from
+                            the most creative minds.</p>
                     </div>
-                </div>
-                <div class="services-text">
-                    <p class="font-bold text-lg">Custom Game <br> Development</p>
-                    <p class="mt-2">The most demanding game service! We bring your gaming experiences that stem from
-                        the most creative minds.</p>
-                </div>
+                </a>
             </div>
 
             <!-- Android App Development Card -->
             <div class="w-full sm:w-[300px] px-2 cursor-pointer app-development py-2">
-                <span class="span"></span>
-                <span class="span2"></span>
-                <div class="flex h-auto place-items-center cursor-pointer">
-                    <div class="services-img">
-                        <img class="max-w-full" src="{{ asset('storage/img/c.gif') }}" alt="">
+                <a href="{{ route('app') }}">
+                    <div class="flex h-auto place-items-center cursor-pointer">
+                        <div class="services-img">
+                            <img class="max-w-full" src="{{ asset('storage/img/c.gif') }}" alt="">
+                        </div>
+                        <div class="p">
+                            <p class="font-bold text-lg">App <br> Development</p>
+                        </div>
                     </div>
-                    <div class="p">
-                        <p class="font-bold text-lg">Android App <br> Development</p>
+                    <div class="services-text">
+                        <p class="font-bold text-lg">App <br> Development</p>
+                        <p class="mt-2">We keep the customer enthralled by developing native apps for the Android
+                            platform with interesting features.</p>
                     </div>
-                </div>
-                <div class="services-text">
-                    <p class="font-bold text-lg">Android App <br> Development</p>
-                    <p class="mt-2">We keep the customer enthralled by developing native apps for the Android
-                        platform with interesting features.</p>
-                </div>
+                </a>
             </div>
 
             <!-- E-commerce Solutions Card -->
             <div class="w-full sm:w-[300px] px-2 cursor-pointer app-development py-2">
-                <div class="flex h-auto justify-around place-items-center cursor-pointer">
-                    <div class="services-img mt-6">
-                        <img class="max-w-full" src="{{ asset('storage/img/d.gif') }}" alt="">
+                <a href="{{ route('web') }}">
+                    <div class="flex h-auto justify-around place-items-center cursor-pointer">
+                        <div class="services-img mt-6">
+                            <img class="max-w-full" src="{{ asset('storage/img/d.gif') }}" alt="">
+                        </div>
+                        <div class="p mt-6">
+                            <p class="font-bold text-lg">Web<br> Development</p>
+                        </div>
                     </div>
-                    <div class="p mt-6">
-                        <p class="font-bold text-lg">E-commerce <br> Solutions</p>
+                    <div class="services-text">
+                        <p class="font-bold text-lg">Web<br> Development</p>
+                        <p class="mt-2">The complete e-commerce need for your business! We offer e-commerce solutions on
+                            all mobile platforms for your business.</p>
                     </div>
-                </div>
-                <div class="services-text">
-                    <p class="font-bold text-lg">E-commerce <br> Solutions</p>
-                    <p class="mt-2">The complete e-commerce need for your business! We offer e-commerce solutions on
-                        all mobile platforms for your business.</p>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -195,11 +199,11 @@
     {{-- Expand your horizons start --}}
     <div class="w-full h-auto md:h-[550px] flex flex-col justify-center">
         <div class="w-[90%] md:w-[85%] h-auto md:h-[420px] mx-auto rounded-3xl bg-cover bg-center bg-no-repeat flex flex-col md:flex-row justify-between place-items-center relative px-10 overflow-hidden mt-4"
-            style="background-image: url({{ asset('storage/img/bg.jpg') }})">
+            style="background-image: url({{ asset('storage/img/bg.gif') }})">
             <!-- Left Image -->
             <div class="w-full md:w-auto">
-                <img class="w-full md:w-[100%] h-[auto] md:h-[25rem] mt-6 md:mt-0" src="{{ asset('storage/img/m1.png') }}"
-                    alt="">
+                <img class="w-full md:w-[100%] h-[auto] md:h-[25rem] mt-6 md:mt-0"
+                    src="{{ asset('storage/img/m1.png') }}" alt="">
             </div>
 
             <!-- Text and Button -->
@@ -218,13 +222,12 @@
                 <div class="relative">
                     <img class="w-full md:w-[100%] h-[auto] md:h-[26rem] mt-13 md:mt-0 "
                         src="{{ asset('storage/img/m2.png') }}" alt="">
-                    <img class="absolute top-8 md:left-5 left-9 w-[80%] md:w-[85%] md:h-[26rem] h-[36rem] rounded-2xl mobile-img"
+                    <img class="absolute top-8 md:left-5 left-5 w-[87%] md:w-[85%] md:h-[26rem] h-[36rem] rounded-2xl mobile-img"
                         src="{{ asset('storage/img/m3.png') }}" alt="">
                 </div>
             </div>
         </div>
     </div>
-
     {{-- Expand your horizons end --}}
 
 
@@ -247,28 +250,40 @@
     {{-- baner 1 section start --}}
     <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] mt-8 relative" id="baner-conatiner">
         <div class="w-full h-full flex justify-center md:justify-end place-items-center absolute left-0 top-0"
-            id="baner-img" style="background-image: url({{ asset('storage/img/bg2.jpg') }})">
+            id="baner-img" style="background-image: url({{ asset('storage/img/bg2.gif') }})">
             <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
-                <p class="text-xl text-white">Connect with God and your inner self</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Spiritual revival at your fingertips.
-                    Building the
-                    staircase to heaven.</p>
-                <p class="mt-3 text-white">Achieve nirvana and enlightenment with an app designed for this very
-                    purpose. Road to spiritual redemption has never been more convenient.</p>
+                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
+                    Powerful ERP Solution!</p>
+                <div class="flex gap-6">
+                    <div>
+                        <p class="mt-5 text-lg  text-white"> Centralized Management</p>
+                        <p class="mt-2 text-lg  text-white">Enhanced Productivity</p>
+                    </div>
+                    <div>
+                        <p class="mt-5 text-lg text-white">Centralized Management</p>
+                        <p class="mt-2 text-lg text-white">Enhanced Productivity</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div
             class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
             <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
-                <img class="w-[57%]" src="{{ asset('storage/img/bol.png') }}" alt="">
+                <img class="w-[57%]" src="{{ asset('storage/img/bol.gif') }}" alt="">
             </div>
             <div class="w-full md:w-[50%] text-center md:text-left">
-                <p class="text-xl">Connect with God and your inner self</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Spiritual revival at your fingertips.
-                    Building the
-                    staircase to heaven.</p>
-                <p class="mt-3">Achieve nirvana and enlightenment with an app designed for this very purpose. Road to
-                    spiritual redemption has never been more convenient.</p>
+                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
+                    Powerful ERP Solution!</p>
+                <div class="flex gap-6">
+                    <div>
+                        <p class="mt-5 text-lg"> Centralized Management</p>
+                        <p class="mt-2 text-lg ">Enhanced Productivity</p>
+                    </div>
+                    <div>
+                        <p class="mt-5 text-lg">Centralized Management</p>
+                        <p class="mt-2 text-lg">Enhanced Productivity</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

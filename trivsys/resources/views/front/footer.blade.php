@@ -1,18 +1,19 @@
 @section('fotter')
-    <footer class="w-full h-auto bg-[#F3F3F3] flex justify-around md:flex-row flex-col md:px-3 px-9 md:gap-0 gap-3 py-9 mt-7">
+    <footer
+        class="w-full h-auto bg-[#F3F3F3] flex justify-around md:flex-row flex-col md:px-3 px-9 md:gap-0 gap-3 py-9 mt-7">
         <div>
             <p class="text-xl font-medium">Services</p>
             <ul class="flex flex-col gap-3 mt-3">
                 <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
                         class="fa-solid fa-arrow-right"></i> <a href="{{ route('web') }}">Web Development</a></li>
                 <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
-                        class="fa-solid fa-arrow-right"></i> App Development</li>
+                        class="fa-solid fa-arrow-right"></i> <a href="{{ route('app') }}">App Development</a></li>
                 <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
-                        class="fa-solid fa-arrow-right"></i> Graphic Designing</li>
+                        class="fa-solid fa-arrow-right"></i> <a href="{{ route('erp') }}">ERP Software Service</a></li>
                 <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
-                        class="fa-solid fa-arrow-right"></i> Logo Designing</li>
+                        class="fa-solid fa-arrow-right"></i> <a href="{{ route('crm') }}">CRM Software Service</a></li>
                 <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
-                        class="fa-solid fa-arrow-right"></i> Facbook Adds</li>
+                        class="fa-solid fa-arrow-right"></i> <a href="{{ route('digital') }}">Digital Marketing</a></li>
             </ul>
         </div>
         <div>
@@ -22,10 +23,8 @@
                         class="fa-solid fa-arrow-right"></i> <a href="{{ route('home') }}">Home</a></li>
                 <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
                         class="fa-solid fa-arrow-right"></i><a href="{{ route('about') }}">About Us</a></li>
-                <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
-                        class="fa-solid fa-arrow-right"></i> Portfolio</li>
-                <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
-                        class="fa-solid fa-arrow-right"></i> Blog</li>
+                <li class=" cursor-pointer hover:text-[#EB7422] ease duration-300"><i
+                        class="fa-solid fa-arrow-right"></i> <a href="{{ route('portfoilo') }}">Portfolio</a></li>
                 <li class="font-medium cursor-pointer hover:text-[#EB7422] ease duration-300"><i
                         class="fa-solid fa-arrow-right"></i> <a href="{{ route('contact') }}">Contact Us</a></li>
             </ul>

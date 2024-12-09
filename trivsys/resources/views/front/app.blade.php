@@ -8,21 +8,23 @@
     <section class="w-full h-auto md:h-[600px] bg-cover bg-center bg-no-repeat py-6"
         style="background-image: url({{ asset('storage/img/app.jpg') }});">
         <div class="w-full h-full flex flex-col justify-center items-start gap-3 px-5 md:px-[5%]">
-            <h1 class="text-4xl md:text-xl font-medium text-[#fff]">Empower Your Business With</h1>
-            <h1 class="text-4xl md:text-4xl font-bold text-[#EB7422] animate__animated animate__bounce">Don't Just Build a
-                <br> Website, Build an <br>
+            <h1 class="text-4xl md:text-4xl font-bold text-white animate__animated animate__bounce">Leading Flutter App
+                <br> Development Company<br>
                 Experience.
             </h1>
+            <h1 class="md:w-[40%] text-4xl md:text-xl font-medium text-[#EB7422]">Transform your ideas into powerful
+                cross-platform
+                applications with our expert Flutter development team.</h1>
             <div class="w-full md:w-[40%] mt-0">
-                <p class="text-white text-sm md:text-lg">
-                    <span class="font-medium text-[#EB7422]">RetroCube</span> is the global guru in the world of app
-                    development services, leading the way through eccentricity and technological creativity. We excel in
-                    creating highly responsive and adaptive apps, providing invigorating user experience across all
-                    platforms.
+                <p class="text-white text-sm md:text-lg">At Retrocube, our skilled Flutter app developers use Google’s
+                    advanced framework to provide comprehensive mobile app solutions. We design high-performance, visually
+                    appealing mobile apps for iOS, Android, web, and desktop, all from one codebase, efficiently bringing
+                    your ideas to life.
                 </p>
             </div>
-            <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium mt-3"><a href="{{ route('contact') }}">Contact Us</a> <span
-                    class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span></button>
+            <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium mt-3"><a
+                    href="{{ route('contact') }}">Contact Us</a> <span class="text-[red]"><i
+                        class="fa-solid fa-arrow-right"></i> </span></button>
         </div>
     </section>
     {{-- Hero section end --}}
@@ -31,18 +33,17 @@
     <div class="w-full md:h-[400px] h-auto  mt-10 md:py-0 py-3 overflow-hidden">
         <div class="w-[85%] h-full flex flex-col md:flex-row items-center justify-between mx-auto">
             <div class="w-full md:w-[50%] text-center md:text-left">
-                <p class="uppercase text-4xl font-bold animate__animated animate__bounce">Innovative, Intuitive and <br>
-                    Fully-Scalable Web <br> Development</p>
-                <p class="mt-2 text-lg">We stay ahead of the curve with cutting-edge technologies and innovative design
-                    approaches keeping you in
-                    the driving position of your industry at all times. From concept to creation, we understand your unique
-                    needs and goals, translating your vision into a website that truly reflects your brand.
+                <p class="uppercase text-4xl font-bold animate__animated animate__bounce">Why Choose Flutt?</p>
+                <p class="mt-2 text-lg">
+                    Flutter has gained immense popularity in Android and <span class="text-[#EC7329]">iOS app
+                        development</span> due to its flexibility, speed,
+                    and cost-efficiency. With its powerful UI toolkit, Flutter enables developers to create stunning,
+                    natively compiled applications for mobile, web, and desktop from a single codebase.
                 </p>
-                <p class="mt-3 text-lg">Ready to Experience the Difference? <span class="text-[#EB7422] font-bold">Let's
-                        Talk!</span></p>
             </div>
             <div class="w-full md:w-[50%] mt-4 md:mt-0 md:ms-10">
-                <img class="w-[100%]  mx-auto md:mx-0" src="{{ asset('storage/img/flutte.png') }}" alt="Web development image">
+                <img class="w-[100%]  mx-auto md:mx-0" src="{{ asset('storage/img/flutte.png') }}"
+                    alt="Web development image">
             </div>
         </div>
     </div>
@@ -52,10 +53,9 @@
     <div class="w-full h-auto mt-10 bg-cover bg-center bg-no-repeat md:px-0 px-4"
         style="background-image: url({{ asset('storage/img/bg3.jpg') }})">
         <!-- Heading Section -->
-        <div class="w-full h-[150px] flex justify-center items-center">
-            <div class="text-center">
-                <p class="text-4xl font-bold text-[#2A2D31] uppercase">Your Destination For Holistic Web Solutions</p>
-                <p class="text-xl">Our complete suite of web development services</p>
+        <div class="w-full h-[100px] flex md:justify-start justify-center items-center ">
+            <div class="md:ms-12 md:ps-14 text-center">
+                <p class="text-4xl font-bold text-[#2A2D31] uppercase">The benefits of choosing Flutter include:</p>
             </div>
         </div>
 
@@ -63,170 +63,161 @@
         <div class="w-full py-5">
             <div class="w-full flex justify-center flex-wrap gap-4">
                 <!-- Service Card 1 -->
-                <div class="w-full sm:w-[350px] h-[280px] border-2 border-[#DAEAF4] rounded py-10 px-3">
-                    <div class="flex justify-start items-center gap-4">
-                        <div>
-                            <img src="{{ asset('storage/img/front.png') }}" alt="Frontend Development">
-                        </div>
-                        <div>
-                            <p class="text-lg font-medium">Frontend <br> Development</p>
-                        </div>
-                    </div>
-                    <p class="ms-[10px] mt-3">We bring your website's vision to life. Pixel-perfect interfaces, seamless
-                        user experiences, and code
-                        that sings - that's the frontend magic we weave.</p>
+
+                <div class="w-full sm:w-[350px] h-auto  rounded md:py-10 px-3">
+                    <ul class="flex flex-col gap-3">
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Future-ready apps</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Faster time-to-market</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Modular architecture</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            User-first UI & UX</li>
+                    </ul>
                 </div>
 
-                <!-- Service Card 2 -->
-                <div class="w-full sm:w-[350px] h-[280px]  border-2 border-[#DAEAF4] rounded py-10 px-3">
-                    <div class="flex justify-start items-center gap-4">
-                        <div>
-                            <img src="{{ asset('storage/img/back.png') }}" alt="Backend Development">
-                        </div>
-                        <div>
-                            <p class="text-lg font-medium">Backend <br> Development</p>
-                        </div>
-                    </div>
-                    <p class="ms-[10px] mt-3">The unsung heroes of the web. We build the powerful engines that drive your
-                        website, ensuring smooth functionality, secure data storage, and scalability for future growth.</p>
+                <div class="w-full sm:w-[350px] h-auto  rounded md:py-10 px-3">
+                    <ul class="flex flex-col gap-3">
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Exceptional featuress</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Smooth integration</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Cross-platform capabilities</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Native performances</li>
+                    </ul>
                 </div>
 
-                <!-- Service Card 3 -->
-                <div class="w-full sm:w-[350px] h-[280px]  border-2 border-[#DAEAF4] rounded py-10 px-3">
-                    <div class="flex justify-start items-center gap-4">
-                        <div>
-                            <img src="{{ asset('storage/img/full-stack.png') }}" alt="Full Stack Development">
-                        </div>
-                        <div>
-                            <p class="text-lg font-medium">Full Stack <br> Development</p>
-                        </div>
-                    </div>
-                    <p class="ms-[10px] mt-3">We speak both languages - frontend and backend. We're your one-stop shop,
-                        crafting beautiful interfaces and building the robust infrastructure to power them.</p>
+                <div class="w-full sm:w-[350px] h-auto  rounded md:py-10 px-3">
+                    <ul class="flex flex-col gap-3">
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Improved scalability</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Quicker debugging</li>
+                        <li class="text-lg text-[#4F5255]"><i class="fa-solid fa-check p-1 rounded-full text-[#E97424]"></i>
+                            Strong community support</li>
+                    </ul>
                 </div>
 
-                <!-- Service Card 4 -->
-                <div class="w-full sm:w-[350px] h-[280px]  border-2 border-[#DAEAF4] rounded py-10 px-3">
-                    <div class="flex justify-start items-center gap-4">
-                        <div>
-                            <img src="{{ asset('storage/img/web-design.png') }}" alt="Web Design">
-                        </div>
-                        <div>
-                            <p class="text-lg font-medium">Web <br> Design</p>
-                        </div>
-                    </div>
-                    <p class="ms-[10px] mt-3">More than just aesthetics, we design websites that convert. We blend user
-                        psychology with stunning visuals to create experiences that captivate and compel action.</p>
-                </div>
-
-                <!-- Service Card 5 -->
-                <div class="w-full sm:w-[350px] h-[280px]  border-2 border-[#DAEAF4] rounded py-10 px-3">
-                    <div class="flex justify-start items-center gap-4">
-                        <div>
-                            <img src="{{ asset('storage/img/cms.png') }}" alt="Content Management Systems">
-                        </div>
-                        <div>
-                            <p class="text-lg font-medium">Content Management <br> Systems (CMS)</p>
-                        </div>
-                    </div>
-                    <p class="ms-[10px] mt-3">Empower yourself! We set up user-friendly CMS platforms so you can easily
-                        manage your website content, keeping it fresh and engaging for your audience.</p>
-                </div>
-
-                <!-- Service Card 6 -->
-                <div class="w-full sm:w-[350px] h-[280px]  border-2 border-[#DAEAF4] rounded py-10 px-3">
-                    <div class="flex justify-start items-center gap-4">
-                        <div>
-                            <img src="{{ asset('storage/img/api.png') }}" alt="API Development">
-                        </div>
-                        <div>
-                            <p class="text-lg font-medium">API <br> Development</p>
-                        </div>
-                    </div>
-                    <p class="ms-[10px] mt-3">The glue that connects your web world. We build APIs that allow seamless data
-                        exchange between your website and other applications, unlocking new possibilities.</p>
-                </div>
             </div>
         </div>
     </div>
     {{-- services cards section end --}}
 
     {{-- Time to Level Up Your Online Presence. section start --}}
-    <div class="w-full h-[400px]  mt-6 bg-cover bg-center bg-no-repeat"
+    <div class="w-full h-[400px]  mt-12 bg-cover bg-center bg-no-repeat"
         style="background-image: url({{ asset('storage/img/baner6.jpg') }})">
         <div class="w-full h-full flex flex-col justify-center items-center text-center">
             <p class="text-3xl md:text-4xl font-bold text-white">Time to Level Up Your Online Presence.</p>
             <p class="text-3xl md:text-4xl font-bold text-[#FF3C0F]">Let's Build Something Amazing!</p>
             <p class="text-lg md:text-xl mt-3 text-white">Get in touch with our representatives and start right away.</p>
             <button class="px-6 py-2 bg-white text-md rounded-[20px] font-medium mt-3 flex items-center justify-center">
-                <a href="{{ route('contact') }}">Contact Us</a> <span class="text-red-600 ml-2"><i class="fa-solid fa-arrow-right"></i></span>
+                <a href="{{ route('contact') }}">Contact Us</a> <span class="text-red-600 ml-2"><i
+                        class="fa-solid fa-arrow-right"></i></span>
             </button>
         </div>
     </div>
     {{-- Time to Level Up Your Online Presence. section end --}}
 
 
-    <div class="w-full md:h-screen h-auto bg-[#f3f3f3] mt-6 md:px-0 px-3 md:py-0 py-3">
-        <div class="w-full h-[150px] flex flex-col justify-center items-center text-center">
-            <p class="text-3xl md:text-4xl font-bold uppercase">Delivering Excellence at Every Step</p>
-            <p class="text-lg md:text-xl mt-2">Here’s a look at our meticulous approach</p>
+    <div class="w-full md:h-auto h-auto bg-[#f3f3f3] mt-6 md:px-0 px-3 md:py-5 py-3">
+        <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-6">
+            <p class="text-3xl md:text-4xl font-bold uppercase">Retrocube’s Flutter App Development Services</p>
+            <p class="text-lg md:text-xl mt-2">As a trusted Flutter development company, we excel in transforming visionary
+                concepts into high-performance digital solutions through our comprehensive Flutter application development
+                services. Recognized for our excellence in Flutter technology, our dedicated team of certified developers
+                combines technical expertise with innovative solutions to deliver superior results and ensure your success
+                in a competitive market.</p>
         </div>
     
         <div class="w-full h-full py-6">
             <div class="w-full flex flex-wrap justify-center gap-6">
                 <!-- Card 1 -->
-                <div class="w-full sm:w-[210px] md:w-[210px] lg:w-[210px] h-[450px] bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
-                    <img class="absolute right-0 top-0" src="{{ asset('storage/img/dp.png') }}" alt="Ideation">
-                    <div class="mt-[5rem]">
-                        <p class="text-4xl font-bold text-[#FF3C0F]">01</p>
-                        <p class="text-xl font-medium mt-2">Ideation</p>
-                        <p class="mt-2 text-sm md:text-base">Kick-off the project discussing concept and planning a pragmatic approach for the development phase.</p>
+                <div
+                    class="w-full sm:w-[210px] md:w-[210px] lg:w-[40%] h-auto md:pb-12 bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
+                    <div class="w-full h-[100px] flex justify-between place-items-center">
+                        <div>
+                            <p class="text-4xl font-bold text-[#FF3C0F]">01</p>
+                        </div>
+                        <div>
+                            <img src="{{ asset('storage/img/message.png') }}" alt=""/>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-right absolute right-0 bottom-0 bg-[#FF3C0F] text-white px-5 py-3 rounded-s-xl text-2xl cursor-pointer"></i>
+                    <div>
+                        <p class="text-xl font-medium mt-2">Flutter App Consulting</p>
+                        <p class="mt-2 text-sm md:text-base">Navigating the complexities of app development requires more
+                            than just technical expertise; it demands strategic insight. Our Flutter app ideation and
+                            consulting services are designed to refine your project concept and align it with the latest
+                            industry standards. We conduct thorough research and feasibility analysis to ensure that your
+                            Flutter app idea not only meets market demands but also stands out in a competitive landscape.
+                        </p>
+                    </div>
                 </div>
-    
                 <!-- Card 2 -->
-                <div class="w-full sm:w-[210px] md:w-[210px] lg:w-[210px] h-[450px] bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
-                    <img class="absolute right-0 top-0" src="{{ asset('storage/img/dp.png') }}" alt="Design">
-                    <div class="mt-[5rem]">
-                        <p class="text-4xl font-bold text-[#FF3C0F]">02</p>
-                        <p class="text-xl font-medium mt-2">Design</p>
-                        <p class="mt-2 text-sm md:text-base">Crafting intuitive, attractive interfaces suited to business needs that encapsulate the essence of the brand.</p>
+                <div
+                    class="w-full sm:w-[210px] md:w-[210px] lg:w-[40%] h-auto md:pb-12 bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
+                    <div class="w-full h-[100px] flex justify-between place-items-center">
+                        <div>
+                            <p class="text-4xl font-bold text-[#FF3C0F]">02</p>
+                        </div>
+                        <div>
+                            <img src="{{ asset('storage/img/ui.png') }}" alt=""/>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-right absolute right-0 bottom-0 bg-[#FF3C0F] text-white px-5 py-3 rounded-s-xl text-2xl cursor-pointer"></i>
+                    <div>
+                        <p class="text-xl font-medium mt-2">Flutter App UI/UX Design</p>
+                        <p class="mt-2 text-sm md:text-base">User experience is fundamental to the success of any
+                            application. Our Flutter UI/UX design services are committed to crafting interfaces that are not
+                            only visually appealing but also highly functional. We collaborate closely with you to design
+                            intuitive, user-centric interfaces that enhance user interaction and satisfaction. Our design
+                            process incorporates detailed user research and iterative testing to ensure that every aspect of
+                            your app's UI contributes to a smooth and engaging user experience.
+                        </p>
+                    </div>
                 </div>
-    
                 <!-- Card 3 -->
-                <div class="w-full sm:w-[210px] md:w-[210px] lg:w-[210px] h-[450px] bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
-                    <img class="absolute right-0 top-0" src="{{ asset('storage/img/dp.png') }}" alt="Development">
-                    <div class="mt-[5rem]">
-                        <p class="text-4xl font-bold text-[#FF3C0F]">03</p>
-                        <p class="text-xl font-medium mt-2">Development</p>
-                        <p class="mt-2 text-sm md:text-base">Implementing performance front-end and scalable back-end functionalities inculcating all the aspects to provide unique customer experience.</p>
+                <div
+                    class="w-full sm:w-[210px] md:w-[210px] lg:w-[40%] h-auto md:pb-12 bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
+                    <div class="w-full h-[100px] flex justify-between place-items-center">
+                        <div>
+                            <p class="text-4xl font-bold text-[#FF3C0F]">03</p>
+                        </div>
+                        <div>
+                            <img src="{{ asset('storage/img/applogo.png') }}" alt=""/>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-right absolute right-0 bottom-0 bg-[#FF3C0F] text-white px-5 py-3 rounded-s-xl text-2xl cursor-pointer"></i>
+                    <div>
+                        <p class="text-xl font-medium mt-2">Flutter App Development</p>
+                        <p class="mt-2 text-sm md:text-base">Our Flutter app development services are centered around
+                            delivering a cohesive multi-platform presence for your business. Our agile developers engage
+                            with you through every phase—from defining the ideal product-market fit to the meticulous
+                            deployment of your application. We focus on creating robust, scalable, and high-performance
+                            application development plans tailored to your specific business needs.
+                        </p>
+                    </div>
                 </div>
-    
                 <!-- Card 4 -->
-                <div class="w-full sm:w-[210px] md:w-[210px] lg:w-[210px] h-[450px] bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
-                    <img class="absolute right-0 top-0" src="{{ asset('storage/img/dp.png') }}" alt="Testing">
-                    <div class="mt-[5rem]">
-                        <p class="text-4xl font-bold text-[#FF3C0F]">04</p>
-                        <p class="text-xl font-medium mt-2">Testing</p>
-                        <p class="mt-2 text-sm md:text-base">Conducting thorough component-based and integrated testing using various testing approaches to ensure every element is in synchronization.</p>
+                <div
+                    class="w-full sm:w-[210px] md:w-[210px] lg:w-[40%] h-auto md:pb-12 bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
+                    <div class="w-full h-[100px] flex justify-between place-items-center">
+                        <div>
+                            <p class="text-4xl font-bold text-[#FF3C0F]">04</p>
+                        </div>
+                        <div>
+                            <img src="{{ asset('storage/img/migration.png') }}" alt=""/>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-right absolute right-0 bottom-0 bg-[#FF3C0F] text-white px-5 py-3 rounded-s-xl text-2xl cursor-pointer"></i>
-                </div>
-    
-                <!-- Card 5 -->
-                <div class="w-full sm:w-[210px] md:w-[210px] lg:w-[210px] h-[450px] bg-white relative px-4 rounded-xl border-2 border-[#ccc] mb-6">
-                    <img class="absolute right-0 top-0" src="{{ asset('storage/img/dp.png') }}" alt="Launch">
-                    <div class="mt-[5rem]">
-                        <p class="text-4xl font-bold text-[#FF3C0F]">05</p>
-                        <p class="text-xl font-medium mt-2">Launch & Scale</p>
-                        <p class="mt-2 text-sm md:text-base">Deploying the full-scale software, along with maintaining and updating based on user insights and demand to improve performance and evolve with changing trends.</p>
+                    <div>
+                        <p class="text-xl font-medium mt-2">Flutter App Migration</p>
+                        <p class="mt-2 text-sm md:text-base">For businesses looking to harness Flutter’s capabilities, we
+                            offer expert migration options for transitioning your existing apps to the Flutter framework.
+                            Our migration process is meticulously planned to enhance performance while preserving the core
+                            functionality of your app. Our Certified Flutter app developers specialize in transitioning
+                            applications from native Android and iOS environments to Flutter.
+                        </p>
                     </div>
-                    <i class="fa-solid fa-arrow-right absolute right-0 bottom-0 bg-[#FF3C0F] text-white px-5 py-3 rounded-s-xl text-2xl cursor-pointer"></i>
                 </div>
             </div>
         </div>

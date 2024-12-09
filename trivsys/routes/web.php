@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\dashboardController;
+
+Route::controller(dashboardController::class,function(){
+    Route::get('/dashboard','viewDashboard')->name('dashboard');
+});
 
 Route::get('/', function () {
     return view('front.home');
@@ -33,3 +38,11 @@ Route::get('/crm-software-servic', function () {
 Route::get('/app-servisec', function () {
     return view('front.app');
 })->name('app');
+
+Route::get('/portfoilo', function () {
+    return view('front.portfoilo');
+})->name('portfoilo');
+
+// Route::get('/dashboard', function () {
+//     return view('admin.dashbord');
+// })->name('dashboard');

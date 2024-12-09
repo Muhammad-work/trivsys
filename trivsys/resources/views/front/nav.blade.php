@@ -2,7 +2,7 @@
     <nav class="w-full h-[80px] bg-[white] flex justify-between md:px-3 px-3 place-items-center">
         <!-- Logo Section -->
         <div class="md:w-[15%] w-[40%]">
-            <img class="w-[100%]" src="{{ asset('storage/img/Untitled-1-removebg-preview.png') }}" alt="Company Logo">
+           <a href="{{ route('home') }}"><img class="w-[100%]" src="{{ asset('storage/img/Untitled-1-removebg-preview.png') }}" alt="Company Logo"></a>
         </div>
 
         <!-- Navigation Menu (Visible on medium screens and larger) -->
@@ -23,8 +23,7 @@
                         <li class="p-2 cursor-pointer mt-3 border-b hover:bg-[#EB7422] hover:text-white ease duration-300"><p><a href="{{ route('crm') }}">CRM Software </a></p></li>
                     </ul>
                 </li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Career</a></li>
+                <li><a href="{{ route('portfoilo') }}">Portfolio</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
             
