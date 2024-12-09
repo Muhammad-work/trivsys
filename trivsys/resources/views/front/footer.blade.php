@@ -34,15 +34,15 @@
             <ul class="flex flex-col gap-3 mt-3">
                 <li>
                     <p class="font-medium text-[#e29663]">Email Address</p>
-                    <p>info.trivsys@gmail.com</p>
+                    <p> {{ $general->s_email }} </p>
                 </li>
                 <li>
                     <p class="font-medium text-[#e29663]">Conatct Number</p>
-                    <p>+1-888-442-4644</p>
+                    <p> {{ $general->s_phone }} </p>
                 </li>
                 <li>
                     <p class="font-medium text-[#e29663]">United States</p>
-                    <p>2030E,15thSt, UnitA Los Angeles, CA 90021</p>
+                    <p>{{ $general->s_address }}</p>
                 </li>
             </ul>
         </div>

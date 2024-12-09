@@ -2,7 +2,7 @@
     <nav class="w-full h-[80px] bg-[white] flex justify-between md:px-3 px-3 place-items-center">
         <!-- Logo Section -->
         <div class="md:w-[15%] w-[40%]">
-           <a href="{{ route('home') }}"><img class="w-[100%]" src="{{ asset('storage/img/Untitled-1-removebg-preview.png') }}" alt="Company Logo"></a>
+           <a href="{{ route('home') }}"><img class="w-[100%]" src="{{ asset('storage/'.  $general->s_img ) }}" alt="Company Logo"></a>
         </div>
 
         <!-- Navigation Menu (Visible on medium screens and larger) -->
@@ -35,7 +35,7 @@
                 <img class="w-[20%]" src="{{ asset('storage/img/cell.png') }}" alt="Phone Icon">
                 <div>
                     <p class="text-[#EB7422]">Call us now</p>
-                    <p class="text-xl">+1-888-442-4644</p>
+                    <p class="text-xl">{{$general->s_phone }}</p>
                 </div>
             </div>
         </div>

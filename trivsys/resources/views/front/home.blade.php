@@ -5,7 +5,7 @@
 
 @section('home')
     {{-- Hero section start --}}
-    <section class="w-full h-auto md:h-[600px] bg-cover bg-center bg-no-repeat py-6"
+    <section class="w-full h-auto md:h-[600px] bg-cover bg-center bg-no-repeat py-6 md:bg-block bg-none"
         style="background-image: url({{ asset('storage/img/section2.gif') }});">
         <div class="w-full h-full flex flex-col justify-center items-start gap-3 px-5 md:px-[5%]">
             <h1 class="text-4xl md:text-5xl font-bold text-[#fff]">Revolutionizing</h1>
@@ -119,7 +119,7 @@
                 <a href="{{ route('crm') }}">
                     <div class="flex h-auto place-items-center cursor-pointer">
                         <div class="services-img">
-                            <img class="max-w-[90%]" src="{{ asset('storage/img/a.gif') }}" alt="">
+                            <img class="max-w-[90%] w-[60%]" src="{{ asset('storage/img/a.gif') }}" alt="">
                         </div>
                         <div class="p">
                             <p class="font-bold text-lg">CRM <br> Software</p>
@@ -139,7 +139,7 @@
                 <a href="{{ route('erp') }}">
                     <div class="flex h-auto place-items-center cursor-pointer">
                         <div class="services-img">
-                            <img class="max-w-[90%]" src="{{ asset('storage/img/b.gif') }}" alt="">
+                            <img class="max-w-[90%] w-[60%]" src="{{ asset('storage/img/b.gif') }}" alt="">
                         </div>
                         <div class="p">
                             <p class="font-bold text-lg">ERP Software</p>
@@ -342,4 +342,140 @@
         </div>
     </div>
     {{-- baner 3 section end --}}
+
+
+
+
+    {{-- product delivery section start  --}}
+
+    <div class="w-full h-auto mt-9 p-3">
+        <div class="w-[90%] h-auto  mx-auto rounded-3xl bg-cover bg-center bg-no-repeat"
+            style="background-image: url({{ asset('storage/img/bg.gif') }})">
+            <div class="w-full h-full flex flex-col md:flex-row justify-evenly items-center gap-6 p-4">
+                <div class="w-full md:w-[40%] flex justify-center">
+                    <img class="w-[70%] md:w-[80%]" src="{{ asset('storage/img/deleviry.webp') }}" alt="">
+                </div>
+                <div class="w-full md:w-[50%] flex flex-col gap-6 text-center justify-center">
+                    <div class="flex flex-col md:flex-row gap-10 text-center items-center">
+                        <div>
+                            <h1 class="text-3xl md:text-5xl font-bold text-white">1000+</h1>
+                            <p class="text-lg text-white">Products (Apps) Delivered</p>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-5xl font-bold text-white">650+</h1>
+                            <p class="text-lg text-white">Creative Nerds under one roof</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl md:text-5xl font-bold text-white">$700m</h1>
+                        <p class="text-lg text-white">Investment Raised for startups</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- product delivery section end  --}}
+
+
+    {{-- contact from section start --}}
+
+    <div class="w-full h-auto md:h-screen mt-6 py-3" style="background-image: url({{ asset('storage/img/c-bg.jpg') }})">
+        <div class="w-[90%] h-full bg-[#202125] mx-auto rounded-2xl flex flex-col md:flex-row gap-3">
+            <!-- Left Section -->
+            <div class="w-full md:w-[50%] h-auto bg-cover bg-center bg-no-repeat py-3 rounded-xl px-4"
+                style="background-image: url({{ asset('storage/img/contact.jpg') }})">
+                <p class="ms-4 cursor-pointer hover:text-[#EC7329] ease-in-out duration-300 text-dark">
+                    <i class="fa-solid fa-envelope"></i> info@retrocube.com
+                </p>
+                <div class="w-full md:h-[80%] h-auto flex flex-col justify-end mt-6">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-[#6A6D76]">
+                            <span class="text-black">Every Successful</span> <br> Project Begins with a <br> Vision!
+                        </h1>
+                    </div>
+                </div>
+                <div class="w-full h-auto flex items-center gap-3 mt-6">
+                    <i class="fa-brands fa-twitter text-xl md:text-2xl cursor-pointer text-white hover:text-[#1DA1F2]"></i>
+                    <i class="fa-brands fa-facebook text-xl md:text-2xl cursor-pointer text-blue-600"></i>
+                    <i class="fa-brands fa-instagram text-xl md:text-2xl cursor-pointer text-[#E4405F]"></i>
+                    <i class="fa-brands fa-linkedin text-xl md:text-2xl cursor-pointer text-[#0A66C2]"></i>
+                    <i class="fa-brands fa-tiktok text-xl md:text-2xl cursor-pointer text-black"></i>
+                </div>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="w-full md:w-[50%] h-auto">
+                <div class="w-[90%] mx-auto py-3">
+                    <h1 class="text-2xl md:text-3xl font-medium text-white">
+                        <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
+                    </h1>
+                    <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
+                    <div class="w-full flex flex-wrap gap-3 mt-4">
+                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                            Web Development
+                        </button>
+                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                            App Development
+                        </button>
+                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                            ERP Software
+                        </button>
+                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                            CRM Software
+                        </button>
+                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                            Digital Marketing
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-5 mt-6">
+                        <input type="hidden" name="service" id="service" value="">
+                        <input type="text" name="full_name" placeholder="Enter Full Name"
+                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                        <input type="text" name="email_address" placeholder="Enter Email Address"
+                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                        <input type="text" name="phone_number" placeholder="Enter Phone Number"
+                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                        <input type="text" name="brief" placeholder="Enter Brief "
+                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                        <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
+                            Submit Request
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    {{-- contact from section end --}}
+
+
+    <script>
+        let serviceBtn = document.querySelectorAll('.btn');
+        let servicinput = document.querySelector('#service');
+        
+        let array = Array.from(serviceBtn);
+
+        array.forEach(btn => {
+            let x = 0;
+            btn.addEventListener('click', (e) => {
+
+                if (x === 0) {
+                    e.target.style.color = '#EB7422';
+                    text = e.target.textContent;
+                    servicinput.value = text;          
+                    x = 1;
+                    
+                } else {
+                    e.target.style.color = '#fff';
+                    text = e.target.textContent;
+                    servicinput.value = ''; 
+                    x = 0;
+                }
+
+
+            });
+        });
+    </script>
 @endsection

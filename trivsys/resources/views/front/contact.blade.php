@@ -20,7 +20,8 @@
     <div class="w-full h-[500px]  mt-4 md:p-3 px-0">
         <div class="md:w-[95%] w-full h-full  mx-auto rounded-3xl bg-cover bg-center bg-no-repeat relative"
             style="background-image: url({{ asset('storage/img/baner8.jpg') }})">
-            <div class="md:w-[350px] md:h-[350px] w-[250px] h-auto bg-[#E97327] absolute -top-12 md:left-12 left-2 rounded-xl px-4 text-white">
+            <div
+                class="md:w-[350px] md:h-[350px] w-[250px] h-auto bg-[#E97327] absolute -top-12 md:left-12 left-2 rounded-xl px-4 text-white">
                 <p class="text-3xl font-bold mt-12">TALK TO US</p>
                 <p class="text-2xl font-medium mt-2">We’re Eager to Know</p>
                 <p class="mt-3">Our team is always curious to discuss new and creative ideas for mobile excellence.</p>
@@ -34,36 +35,44 @@
 
 
     {{-- contact form section start --}}
-    <div class="w-full h-auto p-4">
-        <div class="w-full sm:w-[90%] md:w-[50%] h-full mx-auto bg-[#F3F3F3] rounded-xl p-3 flex flex-col place-items-center">
-            <div class="flex flex-col gap-3 w-full">
-                <label for="" class="font-medium">Full Name</label>
-                <input type="text" name="full-name" id="" placeholder="Enter Full Name"
-                    class="py-2 outline-none rounded px-2">
+    <div class="w-full h-auto md:mt-0 mt-6">
+        <div class="w-[90%] mx-auto py-3 bg-[#202125] p-4 rounded-xl">
+            <h1 class="text-2xl md:text-3xl font-medium text-white">
+                <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
+            </h1>
+            <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
+            <div class="w-full flex flex-wrap gap-3 mt-4">
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    Web Development
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    App Development
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    ERP Software
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    CRM Software
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    Digital Marketing
+                </button>
             </div>
-    
-            <div class="w-full flex flex-col sm:flex-row justify-between gap-3 mx-auto mt-6">
-                <div class="flex flex-col gap-3 w-full sm:w-[48%]">
-                    <label for="" class="font-medium">Email Address</label>
-                    <input type="text" name="email-address" id="" placeholder="Enter Email Address"
-                        class="py-2 outline-none rounded px-2">
-                </div>
-                <div class="flex flex-col gap-3 w-full sm:w-[48%]">
-                    <label for="" class="font-medium">Phone Number</label>
-                    <input type="text" name="phone-number" id="" placeholder="Enter Phone Number"
-                        class="py-2 outline-none rounded px-2">
-                </div>
+            <div class="flex flex-col gap-5 mt-6">
+                <input type="hidden" name="service" id="service" value="">
+                <input type="text" name="full_name" placeholder="Enter Full Name"
+                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                <input type="text" name="email_address" placeholder="Enter Email Address"
+                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                <input type="text" name="phone_number" placeholder="Enter Phone Number"
+                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                <input type="text" name="brief" placeholder="Enter Brief "
+                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
+                    Submit Request
+                </button>
             </div>
-    
-            <div class="flex flex-col gap-3 w-full mt-6">
-                <label for="" class="font-medium">Message</label>
-                <textarea name="message" id="" cols="3" rows="3" placeholder="Enter Message" class="p-2 outline-none rounded"></textarea>
-            </div>
-            <button class="py-2 px-9 bg-[#E97327] text-white mt-6 text-xl rounded">SUBMIT</button>
         </div>
     </div>
     {{-- contact form section end --}}
-
-
-  
 @endsection

@@ -467,7 +467,7 @@
     </style>
 </head>
 
-<body>
+<body class="scroll-smooth">
 
     <!-- loader section start -->
     {{-- <div class="loader-container">
