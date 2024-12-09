@@ -41,6 +41,15 @@
                                 </p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('viewPortfolio') }}" class="nav-link">
+                                <i class="nav-icon fa-solid fa-users"></i>
+                                <p>
+                                    Portfolio
+                                </p>
+                            </a>
+                        </li>
                    
                         <li class="nav-item">
                             <a href="#" class="nav-link">

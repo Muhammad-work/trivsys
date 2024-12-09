@@ -624,6 +624,35 @@
         });
     </script>
 
+    
+<script>
+    let serviceBtn = document.querySelectorAll('.btn');
+    let servicinput = document.querySelector('#service');
+
+    let array = Array.from(serviceBtn);
+
+    array.forEach(btn => {
+        let x = 0;
+        btn.addEventListener('click', (e) => {
+
+            if (x === 0) {
+                e.target.style.color = '#EB7422';
+                text = e.target.textContent;
+                servicinput.value = text;
+                x = 1;
+
+            } else {
+                e.target.style.color = '#fff';
+                text = e.target.textContent;
+                servicinput.value = '';
+                x = 0;
+            }
+
+
+        });
+    });
+</script>
+
 </body>
 
 </html>

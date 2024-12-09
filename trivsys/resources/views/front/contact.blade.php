@@ -41,6 +41,11 @@
                 <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
             </h1>
             <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
+            @if (session('success'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                </div>
+            @endif
             <div class="w-full flex flex-wrap gap-3 mt-4">
                 <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
                     Web Development
@@ -59,20 +64,26 @@
                 </button>
             </div>
             <div class="flex flex-col gap-5 mt-6">
-                <input type="hidden" name="service" id="service" value="">
-                <input type="text" name="full_name" placeholder="Enter Full Name"
-                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                <input type="text" name="email_address" placeholder="Enter Email Address"
-                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                <input type="text" name="phone_number" placeholder="Enter Phone Number"
-                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                <input type="text" name="brief" placeholder="Enter Brief "
-                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
-                    Submit Request
-                </button>
+                <form action="{{ route('storeClientDetail') }}" class="flex flex-col gap-5 mt-6" method="POST"
+                    autocomplete="off">
+                    @csrf
+                    <input type="hidden" name="service" id="service" value="">
+                    <input type="text" name="full_name" placeholder="Enter Full Name"
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <input type="text" name="email_address" placeholder="Enter Email Address"
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <input type="text" name="phone_number" placeholder="Enter Phone Number"
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <input type="text" name="brief" placeholder="Enter Brief "
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
+                        Submit Request
+                    </button>
+                </form>
             </div>
         </div>
     </div>
+
+
     {{-- contact form section end --}}
 @endsection

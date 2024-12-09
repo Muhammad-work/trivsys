@@ -403,7 +403,7 @@
                     <i class="fa-brands fa-tiktok text-xl md:text-2xl cursor-pointer text-black"></i>
                 </div>
             </div>
-    
+
             <!-- Right Section -->
             <div class="w-full md:w-[50%] h-auto">
                 <div class="w-[90%] mx-auto py-3">
@@ -428,54 +428,30 @@
                             Digital Marketing
                         </button>
                     </div>
-                    <div class="flex flex-col gap-5 mt-6">
-                        <input type="hidden" name="service" id="service" value="">
-                        <input type="text" name="full_name" placeholder="Enter Full Name"
-                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                        <input type="text" name="email_address" placeholder="Enter Email Address"
-                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                        <input type="text" name="phone_number" placeholder="Enter Phone Number"
-                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                        <input type="text" name="brief" placeholder="Enter Brief "
-                            class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                        <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
-                            Submit Request
-                        </button>
+                    <div class="">
+                        <form action="{{ route('storeClientDetail') }}" method="POST" class="flex flex-col gap-5 mt-6" autocomplete="off">
+                            @csrf
+                            <input type="hidden" name="service" id="service" value="">
+                            <input type="text" name="full_name" placeholder="Enter Full Name"
+                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                            <input type="text" name="email_address" placeholder="Enter Email Address"
+                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                            <input type="text" name="phone_number" placeholder="Enter Phone Number"
+                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                            <input type="text" name="brief" placeholder="Enter Brief "
+                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                            <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
+                                Submit Request
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
     {{-- contact from section end --}}
 
 
-    <script>
-        let serviceBtn = document.querySelectorAll('.btn');
-        let servicinput = document.querySelector('#service');
-        
-        let array = Array.from(serviceBtn);
-
-        array.forEach(btn => {
-            let x = 0;
-            btn.addEventListener('click', (e) => {
-
-                if (x === 0) {
-                    e.target.style.color = '#EB7422';
-                    text = e.target.textContent;
-                    servicinput.value = text;          
-                    x = 1;
-                    
-                } else {
-                    e.target.style.color = '#fff';
-                    text = e.target.textContent;
-                    servicinput.value = ''; 
-                    x = 0;
-                }
-
-
-            });
-        });
-    </script>
 @endsection

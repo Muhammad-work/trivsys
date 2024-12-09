@@ -8,6 +8,12 @@ use App\Http\Controllers\homeController;
 Route::controller(dashboardController::class)->group(function () {
     Route::get('/dashboard', 'viewDashboard')->name('dashboard');
     Route::get('/dashboard/viewGeneralSetting', 'viewGeneralSetting')->name('viewGeneralSetting');
+    Route::get('/dashboard/portfolio', 'viewPortfolio')->name('viewPortfolio');
+    Route::get('/dashboard/add-portfolio', 'viewAddPortfolioForm')->name('viewAddPortfolioForm');
+    Route::post('/dashboard/storePortfolio', 'storePortfolio')->name('storePortfolio');
+    Route::post('/dashboard/{id}/UpdatePortfolio', 'UpdatePortfolio')->name('UpdatePortfolio');
+    Route::get('/dashboard/{id}/deletePortfolio', 'deletePortfolio')->name('deletePortfolio');
+    Route::get('/dashboard/{id}/edit', 'editPortfolioViewForm')->name('editPortfolioViewForm');
 });
 
 Route::controller(generalController::class)->group(function () {
@@ -25,6 +31,7 @@ Route::controller(homeController::class)->group(function () {
     Route::get('/crm-software-servic', 'viewCrm')->name('crm');
     Route::get('/portfoilo', 'viewProfile')->name('portfoilo');
     Route::get('/contact', 'viewContact')->name('contact');
+    Route::post('/storeClientDetail', 'storeClientDetail')->name('storeClientDetail');
 });
 
 
