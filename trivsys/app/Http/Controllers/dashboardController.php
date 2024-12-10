@@ -10,7 +10,8 @@ use App\Models\mailRequest;
 class dashboardController extends Controller
 {
     public function viewDashboard(){
-        return view('backend.dashbord');
+        $mailRequestCount = mailRequest::whereDate('created_at', today())->count();         
+        return view('backend.dashbord',compact('mailRequestCount'));
     }
 
     public function viewPortfolio(){
@@ -92,7 +93,7 @@ class dashboardController extends Controller
     public function viewClientTable(){
         
          $mail_requests = mailRequest::get();
-
+         
         return view('backend.client',compact('mail_requests'));
     }
 }

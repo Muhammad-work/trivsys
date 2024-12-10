@@ -379,7 +379,6 @@
 
 
     {{-- contact from section start --}}
-
     <div class="w-full h-auto md:h-screen mt-6 py-3" style="background-image: url({{ asset('storage/img/c-bg.jpg') }})">
         <div class="w-[90%] h-full bg-[#202125] mx-auto rounded-2xl flex flex-col md:flex-row gap-3">
             <!-- Left Section -->
@@ -396,7 +395,7 @@
                     </div>
                 </div>
                 <div class="w-full h-auto flex items-center gap-3 mt-6">
-                    <i class="fa-brands fa-twitter text-xl md:text-2xl cursor-pointer text-white hover:text-[#1DA1F2]"></i>
+                    <i class="fa-brands fa-twitter text-xl md:text-2xl cursor-pointer text-[#1DA1F2] "></i>
                     <i class="fa-brands fa-facebook text-xl md:text-2xl cursor-pointer text-blue-600"></i>
                     <i class="fa-brands fa-instagram text-xl md:text-2xl cursor-pointer text-[#E4405F]"></i>
                     <i class="fa-brands fa-linkedin text-xl md:text-2xl cursor-pointer text-[#0A66C2]"></i>
@@ -455,7 +454,5 @@
             </div>
         </div>
     </div>
-
-
     {{-- contact from section end --}}
 @endsection

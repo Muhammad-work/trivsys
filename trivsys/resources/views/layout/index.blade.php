@@ -521,9 +521,9 @@
             const texts = [
                 "Web Development",
                 "App Development",
+                "ERP Software",
+                "CRM Software",
                 "Digital Marketing",
-                "ERP Software Services",
-                "CRM Software Services",
             ];
 
             let currentTextIndex = 0;
