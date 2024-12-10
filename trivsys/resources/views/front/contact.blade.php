@@ -43,7 +43,7 @@
             <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
             @if (session('success'))
                 <div class="alert alert-success" role="alert">
-                    {{ session('success') }}
+                    <span class="text-[#fff]">{{ session('success') }}</span>
                 </div>
             @endif
             <div class="w-full flex flex-wrap gap-3 mt-4">

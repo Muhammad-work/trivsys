@@ -14,6 +14,7 @@ Route::controller(dashboardController::class)->group(function () {
     Route::post('/dashboard/{id}/UpdatePortfolio', 'UpdatePortfolio')->name('UpdatePortfolio');
     Route::get('/dashboard/{id}/deletePortfolio', 'deletePortfolio')->name('deletePortfolio');
     Route::get('/dashboard/{id}/edit', 'editPortfolioViewForm')->name('editPortfolioViewForm');
+    Route::get('/dashboard/viewClientTable', 'viewClientTable')->name('viewClientTable');
 });
 
 Route::controller(generalController::class)->group(function () {

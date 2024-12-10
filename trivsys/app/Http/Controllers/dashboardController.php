@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\portfolio;
+use App\Models\mailRequest;
 
 class dashboardController extends Controller
 {
@@ -86,5 +87,12 @@ class dashboardController extends Controller
 
         $portfolio->delete();
         return redirect()->route('viewPortfolio')->with(['success' => 'Deleted Portfolio successfuly']);
+    }
+
+    public function viewClientTable(){
+        
+         $mail_requests = mailRequest::get();
+
+        return view('backend.client',compact('mail_requests'));
     }
 }

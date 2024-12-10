@@ -119,6 +119,11 @@
                 <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
             </h1>
             <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
+            @if (session('success'))
+                <div class="alert alert-success" role="alert">
+                    <span class="text-[#fff]">{{ session('success') }}</span>
+                </div>
+            @endif
             <div class="w-full flex flex-wrap gap-3 mt-4">
                 <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
                     Web Development
@@ -137,7 +142,8 @@
                 </button>
             </div>
             <div>
-                <form action="{{ route('storeClientDetail') }}"  class="flex flex-col gap-5 mt-6" method="POST" autocomplete="off">
+                <form action="{{ route('storeClientDetail') }}" class="flex flex-col gap-5 mt-6" method="POST"
+                    autocomplete="off">
                     @csrf
                     <input type="hidden" name="service" id="service" value="">
                     <input type="text" name="full_name" placeholder="Enter Full Name"

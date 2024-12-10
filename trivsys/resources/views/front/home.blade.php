@@ -294,7 +294,7 @@
     {{-- baner 2 section start --}}
     <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] relative" id="baner-conatiner">
         <div class="w-full h-full flex justify-center md:justify-start place-items-center px-4 md:px-8 absolute left-0 top-0"
-            id="baner-img" style="background-image: url({{ asset('storage/img/baner-3.jpg') }})">
+            id="baner-img" style="background-image: url({{ asset('storage/img/baner-3.gif') }})">
             <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
                 <p class="text-xl text-white">Medicare Made Affordable</p>
                 <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Compare med prices anytime, anywhere.</p>
@@ -311,7 +311,7 @@
                     compare prescription prices in your vicinity with ease.</p>
             </div>
             <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
-                <img class="w-[57%]" src="{{ asset('storage/img/baner-2.png') }}" alt="">
+                <img class="w-[57%]" src="{{ asset('storage/img/baner2.gif') }}" alt="">
             </div>
         </div>
     </div>
@@ -320,7 +320,7 @@
     {{-- baner 3 section start --}}
     <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] relative" id="baner-conatiner">
         <div class="w-full h-full flex justify-center md:justify-end place-items-center px-4 md:px-8 absolute left-0 top-0"
-            id="baner-img" style="background-image: url({{ asset('storage/img/baner-5.jpg') }})">
+            id="baner-img" style="background-image: url({{ asset('storage/img/baner-5.gif') }})">
             <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
                 <p class="text-xl ">Medicare Made Affordable</p>
                 <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Compare med prices anytime, anywhere.</p>
@@ -331,7 +331,7 @@
         <div
             class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
             <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
-                <img class="w-[57%]" src="{{ asset('storage/img/baner-4.png') }}" alt="">
+                <img class="w-[57%]" src="{{ asset('storage/img/baner-4.gif') }}" alt="">
             </div>
             <div class="w-full md:w-[50%] text-center md:text-left">
                 <p class="text-xl">Letter Meadows</p>
@@ -411,6 +411,11 @@
                         <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
                     </h1>
                     <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
+                    @if (session('success'))
+                        <div class="alert alert-success" role="alert">
+                            <span class="text-[#fff]">{{ session('success') }}</span>
+                        </div>
+                    @endif
                     <div class="w-full flex flex-wrap gap-3 mt-4">
                         <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
                             Web Development
@@ -429,7 +434,8 @@
                         </button>
                     </div>
                     <div class="">
-                        <form action="{{ route('storeClientDetail') }}" method="POST" class="flex flex-col gap-5 mt-6" autocomplete="off">
+                        <form action="{{ route('storeClientDetail') }}" method="POST" class="flex flex-col gap-5 mt-6"
+                            autocomplete="off">
                             @csrf
                             <input type="hidden" name="service" id="service" value="">
                             <input type="text" name="full_name" placeholder="Enter Full Name"
@@ -452,6 +458,4 @@
 
 
     {{-- contact from section end --}}
-
-
 @endsection
