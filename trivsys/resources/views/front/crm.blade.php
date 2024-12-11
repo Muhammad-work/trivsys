@@ -32,12 +32,13 @@
 
     <div class="w-full md:h-[200px] h-auto mt-6">
         <div class="md:w-[70%] w-full px-6 md:mx-0 mx-auto">
-            <p class="text-3xl text-center md:text-left font-bold text-[#E97427]">Offering CRM Software Experiences That
-                Boost Your Growth</p>
-            <p class="text-xl mt-3 text-center md:text-left">Bridging a Link with Your Target Audience</p>
-            <p class="mt-3 text-center md:text-left">At Intersys, we work closely with you and offer customised marketing
-                services based on your strategy and requirements. We’ve been a trusted partner for business owners who want
-                to grow and achieve their long-term business goals.</p>
+            <p class="text-3xl text-center md:text-left font-bold text-[#E97427]">Offering CRM Software Solutions That
+                Accelerate Your Growth</p>
+            <p class="text-xl mt-3 text-center md:text-left">Bridging the Connection with Your Customers</p>
+            <p class="mt-3 text-center md:text-left">At Trivisys, we collaborate closely with you to provide customized CRM
+                software solutions tailored to your business strategy and customer relationship needs. As a trusted partner
+                for businesses aiming to enhance customer engagement and drive long-term success, we help you streamline
+                interactions and optimize customer experiences through intelligent CRM systems.</p>
         </div>
     </div>
 
@@ -47,15 +48,14 @@
             style="background-image: url({{ asset('storage/img/bg.gif') }})">
             <!-- Left Image -->
             <div class="w-full md:w-auto">
-                <img class="w-full md:w-[100%] h-[auto] md:h-[25rem] mt-6 md:mt-0" src="{{ asset('storage/img/m1.png') }}"
-                    alt="">
+                <img class="w-full md:w-[100%] h-[auto] md:h-[25rem] mt-6 md:mt-0"
+                    src="{{ asset('storage/img/crm-dashbord.png') }}" alt="">
             </div>
 
             <!-- Text and Button -->
             <div class=" md:text-left mt-6 md:mt-0">
-                <p class="text-xl md:text-3xl font-bold text-center  text-white">Expand your horizons and <br> achieve
-                    greatness
-                    with Retrocube
+                <p class="text-xl md:text-3xl font-bold text-center  text-white">Expand Your Customer Relationships and
+                    Achieve <br> Success with Trivisys CRM Solutions
                 </p>
                 <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium  mt-6 block mx-auto">
                     Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span>
@@ -68,7 +68,7 @@
                     <img class="w-full md:w-[100%] h-[auto] md:h-[26rem] mt-13 md:mt-0 "
                         src="{{ asset('storage/img/m2.png') }}" alt="">
                     <img class="absolute top-8 md:left-5 left-5 w-[87%] md:w-[85%] md:h-[26rem] h-[36rem] rounded-2xl mobile-img"
-                        src="{{ asset('storage/img/m3.png') }}" alt="">
+                        src="{{ asset('storage/img/crm2.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -81,10 +81,11 @@
         <div class="w-full h-full px-6 py-10 flex flex-col lg:flex-row justify-between">
             <!-- Left Column (Text Section) -->
             <div class="w-full lg:w-[49%] h-full mb-8 lg:mb-0  md:sticky top-0 left-0">
-                <p class="text-2xl">What do we do?</p>
+                <p class="text-2xl">What Do We Do?</p>
                 <p class="text-4xl font-bold text-[#E97427]">Our CRM Software Expertise</p>
-                <p class="mt-3">Overcome your business challenges and transform your startup with our team of experts who
-                    offer strategies based on your goals and business insights.</p>
+                <p class="mt-3">Overcome your business challenges and optimize your customer relationships with our CRM
+                    software solutions. Our expert team offers strategies and systems tailored to your business goals,
+                    enhancing customer engagement, retention, and growth.</p>
             </div>
 
             <!-- Right Column (Services List) -->
@@ -92,31 +93,38 @@
                 <div class="w-full bg-white">
                     <ul class="flex flex-col gap-[3rem] lg:gap-[5rem]">
                         <li class="about">
-                            <p class="py-2 text-xl font-medium text-[#E97427]">Search Engine Optimization (SEO)</p>
-                            <p>Our proven SEO strategies give you visibility and drive organic traffic to your website. We
-                                optimise your content and improve your website's performance to rank higher on search engine
-                                results pages (SERPs).</p>
+                            <p class="py-2 text-xl font-medium text-[#E97427]">CRM Implementation</p>
+                            <p>We help you implement a customized CRM system that centralizes your customer data and
+                                automates processes, improving customer service and boosting operational efficiency.</p>
                         </li>
                         <li class="about">
-                            <p class="py-2 text-xl font-medium text-[#E97427]">Social Media Marketing (SMM)</p>
-                            <p>Social media marketing is a powerful tool for making strong connections and interacting with
-                                your visitors. Our social media experts create strategic campaigns to increase customer
-                                engagement.</p>
+                            <p class="py-2 text-xl font-medium text-[#E97427]">Customization & Integration</p>
+                            <p>Our CRM solutions are fully customizable to meet your specific business needs. We integrate
+                                the CRM system seamlessly with your existing software, providing a unified solution that
+                                improves your sales and marketing efforts.</p>
                         </li>
                         <li class="about">
-                            <p class="py-2 text-xl font-medium text-[#E97427]">Search Engine Marketing (SEM)</p>
-                            <p>Boost your online traffic with targeted SEM campaigns. We use different advertisement ticks
-                                and ideas that target the related audience.</p>
+                            <p class="py-2 text-xl font-medium text-[#E97427]">Customer Data Management</p>
+                            <p>With our CRM software, you can manage customer interactions effectively and gain valuable
+                                insights into customer behaviors. We ensure your data is organized, accessible, and
+                                actionable, helping you make informed decisions.</p>
                         </li>
                         <li class="about">
-                            <p class="py-2 text-xl font-medium text-[#E97427]">Email Marketing & Automation</p>
-                            <p>Create conversions with keen email campaigns and automation. We create personalised
-                                experiences to develop the visitor's interest and make them interact with your services.</p>
+                            <p class="py-2 text-xl font-medium text-[#E97427]">Sales & Marketing Automation</p>
+                            <p>Automate sales and marketing tasks to increase efficiency and improve customer engagement.
+                                Our CRM system streamlines lead management, email campaigns, and follow-ups, ensuring no
+                                opportunity is missed.</p>
                         </li>
                         <li class="about">
-                            <p class="py-2 text-xl font-medium text-[#E97427]">Content Marketing</p>
-                            <p>Share your brand story with the people so that they understand the message and value your
-                                brand has. We create brand stories that the audience can relate to.</p>
+                            <p class="py-2 text-xl font-medium text-[#E97427]">Analytics & Reporting</p>
+                            <p>Our CRM software provides in-depth analytics and reporting to track performance, customer
+                                interactions, and sales. We help you make data-driven decisions to optimize your business
+                                strategies.</p>
+                        </li>
+                        <li class="about">
+                            <p class="py-2 text-xl font-medium text-[#E97427]">Ongoing Support & Maintenance</p>
+                            <p>We offer continuous support and maintenance for your CRM system, ensuring smooth operation
+                                and keeping it aligned with your evolving business needs.</p>
                         </li>
                     </ul>
                 </div>
@@ -125,82 +133,54 @@
     </div>
     {{-- Our Services section end --}}
 
-
-    {{-- contact from section start --}}
-    <div class="w-full h-auto md:h-screen mt-6 py-3" style="background-image: url({{ asset('storage/img/c-bg.jpg') }})">
-        <div class="w-[90%] h-full bg-[#202125] mx-auto rounded-2xl flex flex-col md:flex-row gap-3">
-            <!-- Left Section -->
-            <div class="w-full md:w-[50%] h-auto bg-cover bg-center bg-no-repeat py-3 rounded-xl px-4"
-                style="background-image: url({{ asset('storage/img/contact.jpg') }})">
-                <p class="ms-4 cursor-pointer hover:text-[#EC7329] ease-in-out duration-300 text-dark">
-                    <i class="fa-solid fa-envelope"></i> info@retrocube.com
-                </p>
-                <div class="w-full md:h-[80%] h-auto flex flex-col justify-end mt-6">
-                    <div>
-                        <h1 class="text-3xl md:text-4xl font-bold text-[#6A6D76]">
-                            <span class="text-black">Every Successful</span> <br> Project Begins with a <br> Vision!
-                        </h1>
-                    </div>
+    {{-- contact form section start --}}
+    <div class="w-full h-auto md:mt-8 mt-6">
+        <div class="w-[90%] mx-auto py-3 bg-[#202125] p-4 rounded-xl">
+            <h1 class="text-2xl md:text-3xl font-medium text-white">
+                <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
+            </h1>
+            <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
+            @if (session('success'))
+                <div class="alert alert-success" role="alert">
+                    <span class="text-[#fff]">{{ session('success') }}</span>
                 </div>
-                <div class="w-full h-auto flex items-center gap-3 mt-6">
-                    <i class="fa-brands fa-twitter text-xl md:text-2xl cursor-pointer text-[#1DA1F2] "></i>
-                    <i class="fa-brands fa-facebook text-xl md:text-2xl cursor-pointer text-blue-600"></i>
-                    <i class="fa-brands fa-instagram text-xl md:text-2xl cursor-pointer text-[#E4405F]"></i>
-                    <i class="fa-brands fa-linkedin text-xl md:text-2xl cursor-pointer text-[#0A66C2]"></i>
-                    <i class="fa-brands fa-tiktok text-xl md:text-2xl cursor-pointer text-black"></i>
-                </div>
+            @endif
+            <div class="w-full flex flex-wrap gap-3 mt-4">
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    Web Development
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    App Development
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    ERP Software
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    CRM Software
+                </button>
+                <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                    Digital Marketing
+                </button>
             </div>
-
-            <!-- Right Section -->
-            <div class="w-full md:w-[50%] h-auto">
-                <div class="w-[90%] mx-auto py-3">
-                    <h1 class="text-2xl md:text-3xl font-medium text-white">
-                        <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
-                    </h1>
-                    <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
-                    @if (session('success'))
-                        <div class="alert alert-success" role="alert">
-                            <span class="text-[#fff]">{{ session('success') }}</span>
-                        </div>
-                    @endif
-                    <div class="w-full flex flex-wrap gap-3 mt-4">
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            Web Development
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            App Development
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            ERP Software
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            CRM Software
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            Digital Marketing
-                        </button>
-                    </div>
-                    <div class="">
-                        <form action="{{ route('storeClientDetail') }}" method="POST" class="flex flex-col gap-5 mt-6"
-                            autocomplete="off">
-                            @csrf
-                            <input type="hidden" name="service" id="service" value="">
-                            <input type="text" name="full_name" placeholder="Enter Full Name"
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <input type="text" name="email_address" placeholder="Enter Email Address"
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <input type="text" name="phone_number" placeholder="Enter Phone Number"
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <input type="text" name="brief" placeholder="Enter Brief "
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
-                                Submit Request
-                            </button>
-                        </form>
-                    </div>
-                </div>
+            <div>
+                <form action="{{ route('storeClientDetail') }}" class="flex flex-col gap-5 mt-6" method="POST"
+                    autocomplete="off">
+                    @csrf
+                    <input type="hidden" name="service" id="service" value="">
+                    <input type="text" name="full_name" placeholder="Enter Full Name"
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <input type="text" name="email_address" placeholder="Enter Email Address"
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <input type="text" name="phone_number" placeholder="Enter Phone Number"
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <input type="text" name="brief" placeholder="Enter Brief "
+                        class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                    <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
+                        Submit Request
+                    </button>
+                </form>
             </div>
         </div>
     </div>
-    {{-- contact from section end --}}
+    {{-- contact form section end --}}
 @endsection

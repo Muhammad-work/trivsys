@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\portfolio;
+use App\Mail\clientMail;
 use App\Models\mailRequest;
+use Illuminate\Support\Facades\Mail;
+
 
 class dashboardController extends Controller
 {
@@ -95,5 +98,28 @@ class dashboardController extends Controller
          $mail_requests = mailRequest::get();
          
         return view('backend.client',compact('mail_requests'));
+    }
+
+
+    public function viewMAilForm(string $id){
+         
+        $mailRequest  = mailRequest::find($id);
+        return view('backend.sendMail',compact('mailRequest'));
+    }
+
+    public function sendMailToClient(Request $req){
+          $req->validate([
+              'email' => 'required',
+              'subject' => 'required',
+              'message' => 'required',
+          ]);
+
+          $toMail = $req->email;
+          $subject = $req->subject;
+          $message = $req->message;
+
+          Mail::to($toMail)->send(new clientMail($message,$subject));
+
+          return redirect()->route('viewClientTable')->with(['success' => 'Mail Send SuccessFuly']);
     }
 }

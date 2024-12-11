@@ -8,8 +8,8 @@
     <div class="w-full h-[400px] bg-cover bg-center bg-no-repeat"
         style="background-image: url({{ asset('storage/img/baner7.jpg') }});">
         <div class="w-full h-full flex flex-col justify-center place-items-center">
-            <p class="text-5xl font-bold text-[#2A2D31]">Contact us</p>
-            <p class="mt-6 text-center">Feel free to contact us for turning your idea into a robust mobile app.</p>
+            <p class="md:text-6xl text-5xl font-bold text-[#2A2D31]">Get in Touch</p>
+            <p class="mt-6 text-center md:text-2xl text-1xl w-[55%]">Ready to bring your vision to life? Contact us today, and let’s turn your ideas into a powerful and scalable mobile app.</p>
         </div>
     </div>
     {{-- Hero Section end --}}
@@ -22,9 +22,9 @@
             style="background-image: url({{ asset('storage/img/baner8.jpg') }})">
             <div
                 class="md:w-[350px] md:h-[350px] w-[250px] h-auto bg-[#E97327] absolute -top-12 md:left-12 left-2 rounded-xl px-4 text-white">
-                <p class="text-3xl font-bold mt-12">TALK TO US</p>
-                <p class="text-2xl font-medium mt-2">We’re Eager to Know</p>
-                <p class="mt-3">Our team is always curious to discuss new and creative ideas for mobile excellence.</p>
+                <p class="text-3xl font-bold mt-12">Talk to Us</p>
+                <p class="text-2xl font-medium mt-2">We’re Excited to Hear from You!</p>
+                <p class="mt-3">Our team is eager to explore new and creative ideas, ensuring excellence in mobile app development.</p>
                 <p class="mt-4"><i class="fa-solid fa-phone"></i> +1-844-706-0053</p>
                 <p class="mt-3"><i class="fa-solid fa-phone"></i> +1-888-442-4644</p>
             </div>

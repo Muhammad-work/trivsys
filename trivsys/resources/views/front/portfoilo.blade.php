@@ -25,11 +25,10 @@
     <div class="w-full h-[400px] bg-cover bg-center bg-no-repeat"
         style="background-image: url({{ asset('storage/img/baner7.jpg') }});">
         <div class="w-full  h-full flex flex-col justify-center place-items-center">
-            <p class="md:text-5xl text-2xl font-bold text-[#2A2D31]">Our Collection of Projects
-            </p>
-            <p class="mt-6 text-center">With years of experience, Retrocube prides in developing
-                a plethora of apps across industries.
-            </p>
+            <p class="md:text-6xl text-2xl font-bold text-[#2A2D31]">Our Portfolio</p>
+            <p class="mt-6 text-center md:text-2xl text-1xl md:w-[55%]">With years of experience, Trivisys takes pride in
+                delivering a diverse range of solutions across industries, showcasing our expertise in creating impactful
+                and innovative applications.</p>
         </div>
     </div>
     {{-- Hero Section end --}}
@@ -39,13 +38,11 @@
     <div class="w-full h-auto  mt-6 pb-3 md:py-0 py-4">
         <div class="w-full md:h-[200px] h-auto">
             <div class="w-[80%] h-full ] mx-auto flex flex-col justify-center gap-2">
-                <p class="text-2xl">CASE STUDIES</p>
-                <p class="text-4xl font-bold text-[#2A2D31] uppercase ">Each case study is unique. <br>
-                    just like our clients!</p>
-                <p>We Showcase how our skilled hands and creative minds turn a concept into a fully-functional product.
-                    Here, you will discover satisfied clients with amazing stories!
-
-                </p>
+                <p class="text-2xl">Portfolio</p>
+                <p class="text-4xl font-bold text-[#2A2D31] uppercase ">Every project is unique, just like our clients!</p>
+                <p>We showcase how our expertise and creativity transform concepts into fully functional solutions. Explore
+                    our portfolio to discover the success stories of our satisfied clients and the exceptional work we’ve
+                    delivered across various industries.</p>
             </div>
         </div>
 
@@ -76,44 +73,11 @@
     </div>
     {{-- our project section end --}}
 
-    {{-- Expand your horizons start --}}
-    <div class="w-full h-auto md:h-[550px] flex flex-col justify-center">
-        <div class="w-[90%] md:w-[85%] h-auto md:h-[420px] mx-auto rounded-3xl bg-cover bg-center bg-no-repeat flex flex-col md:flex-row justify-between place-items-center relative px-10 overflow-hidden mt-4"
-            style="background-image: url({{ asset('storage/img/bg.gif') }})">
-            <!-- Left Image -->
-            <div class="w-full md:w-auto">
-                <img class="w-full md:w-[100%] h-[auto] md:h-[25rem] mt-6 md:mt-0" src="{{ asset('storage/img/m1.png') }}"
-                    alt="">
-            </div>
 
-            <!-- Text and Button -->
-            <div class=" md:text-left mt-6 md:mt-0">
-                <p class="text-xl md:text-3xl font-bold text-center  text-white">Expand your horizons and <br> achieve
-                    greatness
-                    with Retrocube
-                </p>
-                <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium  mt-6 block mx-auto">
-                    Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span>
-                </button>
-            </div>
-
-            <!-- Right Image Section -->
-            <div class="w-full md:w-auto mt-6 md:mt-0">
-                <div class="relative">
-                    <img class="w-full md:w-[100%] h-[auto] md:h-[26rem] mt-13 md:mt-0 "
-                        src="{{ asset('storage/img/m2.png') }}" alt="">
-                    <img class="absolute top-8 md:left-5 left-9 w-[80%] md:w-[85%] md:h-[26rem] h-[36rem] rounded-2xl mobile-img"
-                        src="{{ asset('storage/img/m3.png') }}" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Expand your horizons end --}}
 
 
     {{-- contact form section start --}}
-    <div class="w-full h-auto md:mt-0 mt-6">
+    <div class="w-full h-auto md:mt-8 mt-6">
         <div class="w-[90%] mx-auto py-3 bg-[#202125] p-4 rounded-xl">
             <h1 class="text-2xl md:text-3xl font-medium text-white">
                 <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?

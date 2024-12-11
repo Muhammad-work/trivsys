@@ -12,7 +12,7 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="info">
-                    <span class="d-block ms-5 text-white">Hello </span>
+                    <span class="d-block ms-5 text-white">Hello {{ Auth::user()->name }} </span>
                 </div>
             </div>
 

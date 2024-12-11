@@ -4,8 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\generalController;
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\userController;
+use App\Http\Middleware\validUser;
 
-Route::controller(dashboardController::class)->group(function () {
+Route::controller(dashboardController::class)->middleware(validUser::class)->group(function () {
     Route::get('/dashboard', 'viewDashboard')->name('dashboard');
     Route::get('/dashboard/viewGeneralSetting', 'viewGeneralSetting')->name('viewGeneralSetting');
     Route::get('/dashboard/portfolio', 'viewPortfolio')->name('viewPortfolio');
@@ -15,6 +17,8 @@ Route::controller(dashboardController::class)->group(function () {
     Route::get('/dashboard/{id}/deletePortfolio', 'deletePortfolio')->name('deletePortfolio');
     Route::get('/dashboard/{id}/edit', 'editPortfolioViewForm')->name('editPortfolioViewForm');
     Route::get('/dashboard/viewClientTable', 'viewClientTable')->name('viewClientTable');
+    Route::get('/dashboard/{id}/Mail', 'viewMAilForm')->name('viewMAilForm');
+    Route::post('/dashboard/sendMailToClient', 'sendMailToClient')->name('sendMailToClient');
 });
 
 Route::controller(generalController::class)->group(function () {
@@ -36,42 +40,12 @@ Route::controller(homeController::class)->group(function () {
 });
 
 
-// Route::get('/', function () {
-//     return view('front.home');
-// })->name('home');
+Route::controller(userController::class)->group(function () {
+    Route::get('/dashbord/login', 'viewLoginForm')->name('login');
+    Route::post('/dashbord/storeLoginData', 'storeLoginData')->name('storeLoginData');
+    Route::get('/dashbord/logout', 'logout')->name('logout');
+});
 
-// Route::get('/web-servisec', function () {
-//     return view('front.web-services');
-// })->name('web');
 
-// Route::get('/contact', function () {
-//     return view('front.contact');
-// })->name('contact');
 
-// Route::get('/about-us', function () {
-//     return view('front.about');
-// })->name('about');
 
-// Route::get('/digital-marketing', function () {
-//     return view('front.digital');
-// })->name('digital');
-
-// Route::get('/erp-software-servic', function () {
-//     return view('front.erp');
-// })->name('erp');
-
-// Route::get('/crm-software-servic', function () {
-//     return view('front.crm');
-// })->name('crm');
-
-// Route::get('/app-servisec', function () {
-//     return view('front.app');
-// })->name('app');
-
-// Route::get('/portfoilo', function () {
-//     return view('front.portfoilo');
-// })->name('portfoilo');
-
-// Route::get('/dashboard', function () {
-//     return view('admin.dashbord');
-// })->name('dashboard');

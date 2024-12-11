@@ -33,12 +33,14 @@
     <div class="w-full h-auto flex flex-col lg:flex-row justify-between place-items-center md:gap-3 gap-10 px-5 py-4 mt-3">
         <div class="w-full lg:w-[50%] h-auto flex flex-col gap-3" id="one">
             <p class="text-xl">Empowering Enterprises</p>
-            <p class="text-3xl font-bold text-[#eb7422] animate__animated animate__bounce">Conquer the world with us</p>
+            <p class="text-3xl font-bold text-[#eb7422] animate__animated animate__bounce">Conquer the Digital Frontier with
+                Us</p>
             <div>
-                <p>We are dedicated to guiding you to navigate through the digital realm in order to grow your business
-                    from the introduction phase to the growth stage. We envision driving positive outcomes by allocating
-                    our expertise and tech solutions. Our detailed and strategic approach allows us to deliver a
-                    distinctive user experience. Let’s touch the horizons with digitalization.</p>
+                <p>At Trivsys, we don’t just provide solutions – we drive your business from the ground up to new heights.
+                    With our expert guidance, we help you navigate the digital world seamlessly, transforming your business
+                    from its initial phase to thriving success. Through cutting-edge technology and strategic innovation, we
+                    deliver exceptional user experiences and measurable results. Let’s break boundaries together and unlock
+                    your business’s true potential with the power of digital transformation.</p>
             </div>
         </div>
 
@@ -85,12 +87,16 @@
 
             <!-- Subtitle section with animation -->
             <p class="text-3xl md:text-4xl text-[#EB7422] font-bold animate__animated animate__bounce">
-                Integrate innovation at the core of your business
+                Fuel Your Business with Innovation at Its Core.
             </p>
 
             <!-- Description text -->
             <p class="mt-3 text-base md:text-lg">
-                We believe in transforming the journey of businesses with the integration of our products
+                At Trivsys, we’re not just offering products – we’re delivering transformative solutions that redefine your
+                business journey. By seamlessly integrating our cutting-edge technology, we empower you to unlock new
+                growth, efficiency, and success. Our innovative tools are crafted to accelerate your business, making
+                operations smarter, faster, and more impactful. Step into the future with Trivsys and experience the power
+                of digital transformation, one solution at a time.
             </p>
         </div>
     </div>
@@ -99,16 +105,22 @@
 
 
     {{-- services section start --}}
-    <div class="w-full md:h-[700px] bg-[#F3F3F3] mt-3 md:py-10 z-30">
+    <div class="w-full md:h-auto bg-[#F3F3F3] mt-3 md:py-10 z-30">
         <div class="w-full md:w-[58%] h-auto mx-auto px-4">
             <div>
                 <p class="text-3xl md:text-5xl font-bold text-center uppercase mb-3 relative z-40" id="services">
                     Our Service Offerings
                 </p>
             </div>
-            <p class="text-base md:text-lg">
-                Our strength lies in the comprehensive suite of services we offer our clients. From consultation to
-                full-stack app development services, our experts provide complete services tailored to your needs.
+            <p class="text-base md:text-lg text-center">
+                Unlock the Full Potential of Your Business with Our Expert Solutions.
+
+                At Trivsys, we don’t just offer services – we craft bespoke, end-to-end solutions that transform your vision
+                into reality. From expert consultation to full-stack app development and beyond, our team of specialists
+                delivers tailored strategies that align perfectly with your goals. Whether you're starting from scratch or
+                scaling to new heights, we provide seamless, innovative, and impactful solutions at every stage of your
+                business journey. Experience the Trivsys difference and watch your business thrive with our cutting-edge
+                services.
             </p>
         </div>
 
@@ -127,8 +139,12 @@
                     </div>
                     <div class="services-text">
                         <p class="font-bold text-lg">CRM <br> Software</p>
-                        <p class="mt-2">RetroCube is a renowned iPhone app development company that provides top-notch
-                            iOS app development services.</p>
+                        <p class="mt-2">Transform Your Business with Smart, Scalable CRM Solutions.
+
+                            RetroCube offers cutting-edge CRM software that streamlines your operations, boosts customer
+                            relationships, and drives growth. Tailored to your needs, our solutions empower you to work
+                            smarter, not harder.Experience the difference with solutions designed to scale with your
+                            success.</p>
                     </div>
                 </a>
 
@@ -147,8 +163,11 @@
                     </div>
                     <div class="services-text">
                         <p class="font-bold text-lg">ERP Software</p>
-                        <p class="mt-2">The most demanding game service! We bring your gaming experiences that stem from
-                            the most creative minds.</p>
+                        <p class="mt-2">Unleash the Power of Seamless Business Management.
+
+                            Our ERP software streamlines your operations, boosts efficiency, and drives growth – all
+                            tailored to your unique business needs. Experience smarter management, better insights, and
+                            endless possibilities.</p>
                     </div>
                 </a>
             </div>
@@ -166,8 +185,10 @@
                     </div>
                     <div class="services-text">
                         <p class="font-bold text-lg">App <br> Development</p>
-                        <p class="mt-2">We keep the customer enthralled by developing native apps for the Android
-                            platform with interesting features.</p>
+                        <p class="mt-2">Crafting Exceptional Android Apps That Captivate and Engage.
+
+                            We create cutting-edge, feature-rich native apps that deliver seamless user experiences, keeping
+                            your customers hooked and coming back for.</p>
                     </div>
                 </a>
             </div>
@@ -185,8 +206,11 @@
                     </div>
                     <div class="services-text">
                         <p class="font-bold text-lg">Web<br> Development</p>
-                        <p class="mt-2">The complete e-commerce need for your business! We offer e-commerce solutions on
-                            all mobile platforms for your business.</p>
+                        <p class="mt-2">Power Your Business with Seamless E-Commerce Solutions.
+
+                            We deliver cutting-edge e-commerce platforms designed to elevate your business across all mobile
+                            and web interfaces. Tailored for growth, our solutions ensure a seamless shopping experience
+                            that keeps customers engaged and drives sales.</p>
                     </div>
                 </a>
             </div>
@@ -208,9 +232,8 @@
 
             <!-- Text and Button -->
             <div class=" md:text-left mt-6 md:mt-0">
-                <p class="text-xl md:text-3xl font-bold text-center  text-white">Expand your horizons and <br> achieve
-                    greatness
-                    with Retrocube
+                <p class="text-xl md:text-3xl font-bold text-center  text-white">Expand your horizons and <br> Achieve
+                    Greatness with Retrocube’s ERP Solutions
                 </p>
                 <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium  mt-6 block mx-auto">
                     Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span>
@@ -235,12 +258,13 @@
     {{-- Converting Your Ideas section start --}}
     <div class="w-full h-auto md:h-[200px] flex justify-center place-items-center mt-5">
         <div class="w-[90%] md:w-[40%] text-center">
-            <p class="text-2xl md:text-4xl font-bold mt-2">Converting Your Ideas</p>
-            <p class="text-2xl md:text-4xl font-bold mt-2 uppercase mb-3 relative z-40" id="services">Into a Digital
-                Reality</p>
+            <p class="text-2xl md:text-4xl font-bold mt-2" id="services">Turning Your Ideas into Digital Masterpieces.
+            </p>
+            {{-- <p class="text-2xl md:text-4xl font-bold mt-2 uppercase mb-3 relative z-40" id="services">Into a Digital
+                Reality</p> --}}
             <p class="text-base md:text-lg mt-3">
-                We help provide top-of-the-line iOS and Android solutions by developing enterprise-grade web and mobile
-                applications.
+                We craft world-class iOS, Android, and web solutions, transforming your vision into powerful,
+                enterprise-grade applications that drive success and innovation.
             </p>
         </div>
     </div>
@@ -254,14 +278,16 @@
             <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
                 <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
                     Powerful ERP Solution!</p>
-                <div class="flex gap-6">
+                <div class="flex md:flex-row flex-col gap-3">
                     <div>
-                        <p class="mt-5 text-lg  text-white"> Centralized Management</p>
-                        <p class="mt-2 text-lg  text-white">Enhanced Productivity</p>
+                        <p class="mt-5 text-md  text-white">1. Unify Your Operations with Ease</p>
+                        <p class="mt-2 text-md  text-white">2. All your processes, data, and teams in one powerful
+                            platform.</p>
                     </div>
                     <div>
-                        <p class="mt-5 text-lg text-white">Centralized Management</p>
-                        <p class="mt-2 text-lg text-white">Enhanced Productivity</p>
+                        <p class="mt-5 text-md text-white">3. Maximize Efficiency.</p>
+                        <p class="mt-2 text-md text-white">4. Empower your team with tools that accelerate performance and
+                            drive results.</p>
                     </div>
                 </div>
             </div>
@@ -274,14 +300,15 @@
             <div class="w-full md:w-[50%] text-center md:text-left">
                 <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
                     Powerful ERP Solution!</p>
-                <div class="flex gap-6">
+                <div class="w-full  flex md:flex-row flex-col gap-3">
                     <div>
-                        <p class="mt-5 text-lg"> Centralized Management</p>
-                        <p class="mt-2 text-lg ">Enhanced Productivity</p>
+                        <p class="mt-5 text-md">1. Unify Your Operations with Ease</p>
+                        <p class="mt-2 text-md ">2. All your processes, data, and teams in one powerful platform.</p>
                     </div>
                     <div>
-                        <p class="mt-5 text-lg">Centralized Management</p>
-                        <p class="mt-2 text-lg">Enhanced Productivity</p>
+                        <p class="mt-5 text-md">3. Maximize Efficiency.</p>
+                        <p class="mt-2 text-md">4. Empower your team with tools that accelerate performance and drive
+                            results.</p>
                     </div>
                 </div>
             </div>
@@ -296,19 +323,19 @@
         <div class="w-full h-full flex justify-center md:justify-start place-items-center px-4 md:px-8 absolute left-0 top-0"
             id="baner-img" style="background-image: url({{ asset('storage/img/baner-3.gif') }})">
             <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
-                <p class="text-xl text-white">Medicare Made Affordable</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Compare med prices anytime, anywhere.</p>
-                <p class="mt-3 text-white">Living a healthy life is a necessity not luxury, that’s why our app allows
-                    you to compare prescription prices in your vicinity with ease.</p>
+                <p class="text-xl text-white">CRM Made Simple</p>
+                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Customer Interactions, Anytime,
+                    Anywhere.</p>
+                <p class="mt-3 text-white">Building strong customer relationships is essential, not optional</p>
             </div>
         </div>
         <div
             class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
             <div class="w-full md:w-[50%] text-center md:text-left">
-                <p class="text-xl">Medicare Made Affordable</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Compare med prices anytime, anywhere.</p>
-                <p class="mt-3">Living a healthy life is a necessity not luxury, that’s why our app allows you to
-                    compare prescription prices in your vicinity with ease.</p>
+                <p class="text-xl">CRM Made Simple</p>
+                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Customer Interactions, Anytime,
+                    Anywhere.</p>
+                <p class="mt-3">Building strong customer relationships is essential, not optional</p>
             </div>
             <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
                 <img class="w-[57%]" src="{{ asset('storage/img/baner2.gif') }}" alt="">
@@ -322,10 +349,13 @@
         <div class="w-full h-full flex justify-center md:justify-end place-items-center px-4 md:px-8 absolute left-0 top-0"
             id="baner-img" style="background-image: url({{ asset('storage/img/baner-5.gif') }})">
             <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
-                <p class="text-xl ">Medicare Made Affordable</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Compare med prices anytime, anywhere.</p>
-                <p class="mt-3 ">Living a healthy life is a necessity not luxury, that’s why our app allows
-                    you to compare prescription prices in your vicinity with ease.</p>
+                <p class="text-xl text-white">Build Your Future with Seamless Web Development</p>
+                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Transform your ideas into reality with ease.
+                </p>
+                <p class="mt-3 text-white">Our platform offers powerful, user-friendly tools for building dynamic websites,
+                    no
+                    technical expertise required. Whether you're launching your first website or enhancing an existing one,
+                    we provide everything you need to create a stunning online presence.</p>
             </div>
         </div>
         <div
@@ -334,10 +364,12 @@
                 <img class="w-[57%]" src="{{ asset('storage/img/baner-4.gif') }}" alt="">
             </div>
             <div class="w-full md:w-[50%] text-center md:text-left">
-                <p class="text-xl">Letter Meadows</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Making learning fun and interesting</p>
-                <p class="mt-3">Let your kids enjoy an entertaining educational experience with an app, designed to
-                    make kids learn from an early age through fun and engaging games.</p>
+                <p class="text-xl">Build Your Future with Seamless Web Development</p>
+                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Transform your ideas into reality with ease.
+                </p>
+                <p class="mt-3">Our platform offers powerful, user-friendly tools for building dynamic websites, no
+                    technical expertise required. Whether you're launching your first website or enhancing an existing one,
+                    we provide everything you need to create a stunning online presence.</p>
             </div>
         </div>
     </div>
@@ -353,7 +385,7 @@
             style="background-image: url({{ asset('storage/img/bg.gif') }})">
             <div class="w-full h-full flex flex-col md:flex-row justify-evenly items-center gap-6 p-4">
                 <div class="w-full md:w-[40%] flex justify-center">
-                    <img class="w-[70%] md:w-[80%]" src="{{ asset('storage/img/deleviry.webp') }}" alt="">
+                    <img class="w-[70%] md:w-[80%]" src="{{ asset('storage/img/deleviry.png') }}" alt="">
                 </div>
                 <div class="w-full md:w-[50%] flex flex-col gap-6 text-center justify-center">
                     <div class="flex flex-col md:flex-row gap-10 text-center items-center">

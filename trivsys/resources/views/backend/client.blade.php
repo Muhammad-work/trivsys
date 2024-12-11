@@ -39,6 +39,7 @@
                                     <th>CLIENT PHONE</th>
                                     <th>SERVICE</th>
                                     <th>MESSAGE</th>
+                                    <th>ACTION</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -55,6 +56,10 @@
                                             @else
                                                 No Message
                                             @endif
+                                        </td>
+                                        <td>
+                                            <a href="{{ route('viewMAilForm', $data->id) }}" class="btn btn-primary">Send
+                                                Mail</a>
                                         </td>
                                     </tr>
                                 @endforeach
