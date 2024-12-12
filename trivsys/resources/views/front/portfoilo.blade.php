@@ -25,7 +25,7 @@
     <div class="w-full h-[400px] bg-cover bg-center bg-no-repeat"
         style="background-image: url({{ asset('storage/img/baner7.jpg') }});">
         <div class="w-full  h-full flex flex-col justify-center place-items-center">
-            <p class="md:text-6xl text-2xl font-bold text-[#2A2D31]">Our Portfolio</p>
+            <p class="md:text-6xl text-2xl font-bold text-[#EC7329]">Our Portfolio</p>
             <p class="mt-6 text-center md:text-2xl text-1xl md:w-[55%]">With years of experience, Trivisys takes pride in
                 delivering a diverse range of solutions across industries, showcasing our expertise in creating impactful
                 and innovative applications.</p>
@@ -49,7 +49,7 @@
         <div class="w-full h-full  md:px-0 px-3 py-3  md:mt-0 mt-3">
             <div class="w-full h-full flex flex-wrap justify-center gap-3">
 
-                @foreach ($portfolio as $data)
+                {{-- @foreach ($portfolio as $data)
                     <div class="w-[350px] h-[400px] bg-[white] rounded-xl relative cursor-pointer bg-cover bg-center bg-no-repeat"
                         id="project-container" style="background-image: url({{ asset('storage/' . $data->img) }})">
                         <div class="w-full h-0 md:block lg:block hidden absolute top-0 left-0 bg-[#E97524]  rounded-xl text-white "
@@ -65,7 +65,38 @@
                             <p> {{ $data->des }} </p>
                         </div>
                     </div>
-                @endforeach
+                @endforeach --}}
+
+                <div class="w-[40%] h-auto p-3 rounded shadow-lg shadow-dark-500/90">
+                    <img class="w-full" src="{{ asset('storage/img/uma.png') }}" alt="">
+                    <div>
+                        <p class="mt-2 font-medium">Uma Imports Inc</p>
+                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
+                            voluptate sequi
+                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
+                            neque non consequatur saepe!</p>
+                    </div>
+                </div>
+                <div class="w-[40%] h-auto p-3 rounded shadow-lg shadow-dark-500/90">
+                    <img class="w-full" src="{{ asset('storage/img/desi.png') }}" alt="">
+                    <div>
+                        <p class="mt-2 font-medium">Desi Shuttle Service</p>
+                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
+                            voluptate sequi
+                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
+                            neque non consequatur saepe!</p>
+                    </div>
+                </div>
+                <div class="w-[40%] h-auto p-3 rounded shadow-lg shadow-dark-500/90">
+                    <img class="w-full" src="{{ asset('storage/img/pbs.png') }}" alt="">
+                    <div>
+                        <p class="mt-2 font-medium">CRM Software</p>
+                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
+                            voluptate sequi
+                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
+                            neque non consequatur saepe!</p>
+                    </div>
+                </div>
 
             </div>
         </div>

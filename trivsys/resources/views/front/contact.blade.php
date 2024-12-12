@@ -8,7 +8,7 @@
     <div class="w-full h-[400px] bg-cover bg-center bg-no-repeat"
         style="background-image: url({{ asset('storage/img/baner7.jpg') }});">
         <div class="w-full h-full flex flex-col justify-center place-items-center">
-            <p class="md:text-6xl text-5xl font-bold text-[#2A2D31]">Get in Touch</p>
+            <p class="md:text-6xl text-5xl font-bold text-[#EC7329]">Get in Touch</p>
             <p class="mt-6 text-center md:text-2xl text-1xl w-[55%]">Ready to bring your vision to life? Contact us today, and let’s turn your ideas into a powerful and scalable mobile app.</p>
         </div>
     </div>
