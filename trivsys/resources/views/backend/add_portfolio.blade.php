@@ -27,24 +27,6 @@
                                         <span class="text-danger">{{  $message  }}</span>
                                     @enderror
                                 </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Portfolio Title</label>
-                                    <input type="text" class="form-control" name="title" id="exampleInputEmail1"
-                                        placeholder="Enter Portfolio Title">
-                                    @error('title')
-                                        <span class="text-danger">{{  $message  }}</span>
-                                    @enderror
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Portfolio Description</label>
-                                    <input type="text" class="form-control" name="Description" id="exampleInputEmail1"
-                                        placeholder="Enter Portfolio Description">
-                                    @error('Description')
-                                        <span class="text-danger">{{  $message  }}</span>
-                                    @enderror
-                                </div>
                             </div>
                             <!-- /.card-body -->
                             <div class="card-footer">

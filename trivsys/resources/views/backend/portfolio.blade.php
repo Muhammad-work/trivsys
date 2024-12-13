@@ -36,9 +36,7 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>PORTFOLIO IMG</th>
-                                    <th>PORTFOLIO TITLE</th>
-                                    <th>PORTFOLIO DESCRIPTION</th>
+                                    <th>PORTFOLIO Logo</th>
                                     <th>ACTION</th>
                                 </tr>
                             </thead>
@@ -49,8 +47,6 @@
                                         <td>  
                                             <img  src="{{ asset('storage/' . $data->img) }}" alt="" style="width: 40px">
                                         </td>
-                                        <td> {{ $data->title }} </td>
-                                        <td>{{ $data->des }}</td>
                                         <td>
                                             <a href="{{ route('editPortfolioViewForm',$data->id) }}" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
                                             <a href="{{ route('deletePortfolio',$data->id) }}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>

@@ -30,16 +30,15 @@ class dashboardController extends Controller
         
         $req->validate([
             'img' => 'required',
-            'title' => 'required',
-            'Description' => 'required',        
         ]);
 
         $path = $req->img->store('img', 'public');
-
+        $title = $req->title ?: 'No Title';
+        $des = $req->des ?: 'No Des';
         portfolio::create([
             'img' =>   $path,
-            'title' => $req->title,
-            'des' => $req->Description,
+            'title' =>  $title,
+            'des' => $des,
         ]);
 
         return redirect()->route('viewPortfolio')->with(['success' => 'Add New Portfolio successfuly']);
@@ -81,7 +80,8 @@ class dashboardController extends Controller
             'title' => $req->title,
             'des' => $req->Description,
         ]);
-
+         
+        $portfolio = 'Hello World';
         return redirect()->route('viewPortfolio')->with(['success' => 'Update Portfolio successfuly']);
 
     }
