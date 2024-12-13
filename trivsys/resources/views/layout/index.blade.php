@@ -14,6 +14,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     @vite('resources/css/app.css')
     <style>
         * {
@@ -489,18 +495,18 @@
     {{-- nav --}}
 
     {{-- sidebar section start --}}
-       @yield('sidebar')
+    @yield('sidebar')
     {{-- sidebar section end --}}
 
 
-      {{-- Home --}}
-      @yield('home')
-      {{-- Home --}}
+    {{-- Home --}}
+    @yield('home')
+    {{-- Home --}}
 
 
 
     {{-- footer section start --}}
-     @yield('fotter')
+    @yield('fotter')
     {{-- footer section end --}}
 
     <script>
@@ -624,35 +630,60 @@
         });
     </script>
 
-    
-<script>
-    let serviceBtn = document.querySelectorAll('.btn');
-    let servicinput = document.querySelector('#service');
 
-    let array = Array.from(serviceBtn);
+    <script>
+        let serviceBtn = document.querySelectorAll('.btn');
+        let servicinput = document.querySelector('#service');
 
-    array.forEach(btn => {
-        let x = 0;
-        btn.addEventListener('click', (e) => {
+        let array = Array.from(serviceBtn);
 
-            if (x === 0) {
-                e.target.style.color = '#EB7422';
-                text = e.target.textContent;
-                servicinput.value = text;
-                x = 1;
+        array.forEach(btn => {
+            let x = 0;
+            btn.addEventListener('click', (e) => {
 
-            } else {
-                e.target.style.color = '#fff';
-                text = e.target.textContent;
-                servicinput.value = '';
-                x = 0;
-            }
+                if (x === 0) {
+                    e.target.style.color = '#EB7422';
+                    text = e.target.textContent;
+                    servicinput.value = text;
+                    x = 1;
+
+                } else {
+                    e.target.style.color = '#fff';
+                    text = e.target.textContent;
+                    servicinput.value = '';
+                    x = 0;
+                }
 
 
+            });
         });
-    });
-</script>
+    </script>
 
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1, // Default: 1 slide visible
+            spaceBetween: 10, // Space between slides
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2, // 2 slides for screens >= 640px
+                },
+                768: {
+                    slidesPerView: 3, // 3 slides for screens >= 768px
+                },
+                1024: {
+                    slidesPerView: 4, // 4 slides for screens >= 1024px
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

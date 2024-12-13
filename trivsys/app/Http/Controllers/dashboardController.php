@@ -8,7 +8,7 @@ use App\Models\portfolio;
 use App\Mail\clientMail;
 use App\Models\mailRequest;
 use Illuminate\Support\Facades\Mail;
-
+use App\Models\user;
 
 class dashboardController extends Controller
 {
@@ -122,4 +122,20 @@ class dashboardController extends Controller
 
           return redirect()->route('viewClientTable')->with(['success' => 'Mail Send SuccessFuly']);
     }
+
+
+    // public function changePasswordFrom(){
+    //     return view('backend.changePassword');
+    // }
+
+    // public function storeChangePassword(Request $req,string $id){
+    //       $req->validate([
+    //          'password' => 'required'
+    //       ]);
+   
+    //      $user = user::find($id);
+    //      $user->password = bcrypt($req->password);
+
+    //      return back()->with(['success' => 'Change Password Successfuly']);
+    // }
 }

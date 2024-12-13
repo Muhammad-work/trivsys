@@ -35,9 +35,9 @@
 
 
     {{-- our project section start --}}
-    <div class="w-full h-auto  mt-6 pb-3 md:py-0 py-4">
+    <div class="w-full h-auto mt-6 pb-3 md:py-0 py-4">
         <div class="w-full md:h-[200px] h-auto">
-            <div class="w-[80%] h-full ] mx-auto flex flex-col justify-center gap-2">
+            <div class="w-[80%] h-full mx-auto flex flex-col justify-center gap-2">
                 <p class="text-2xl">Portfolio</p>
                 <p class="text-4xl font-bold text-[#2A2D31] uppercase ">Every project is unique, just like our clients!</p>
                 <p>We showcase how our expertise and creativity transform concepts into fully functional solutions. Explore
@@ -45,62 +45,53 @@
                     delivered across various industries.</p>
             </div>
         </div>
-
-        <div class="w-full h-full  md:px-0 px-3 py-3  md:mt-0 mt-3">
+    
+        <div class="w-full h-full md:px-0 px-3 py-3 md:mt-0 mt-3">
             <div class="w-full h-full flex flex-wrap justify-center gap-3">
-
-                {{-- @foreach ($portfolio as $data)
-                    <div class="w-[350px] h-[400px] bg-[white] rounded-xl relative cursor-pointer bg-cover bg-center bg-no-repeat"
-                        id="project-container" style="background-image: url({{ asset('storage/' . $data->img) }})">
-                        <div class="w-full h-0 md:block lg:block hidden absolute top-0 left-0 bg-[#E97524]  rounded-xl text-white "
-                            id="project-contant">
-                            <div class="w-full h-full flex flex-col justify-end pb-9 px-4">
-                                <h1 class="text-2xl font-bold">{{ $data->title }}</h1>
-                                <p> {{ $data->des }} </p>
+                <div class="container mx-auto my-8 px-4">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slide Items -->
+                            <div class="swiper-slide flex justify-center">
+                                <a href="https://www.stacker2.com/?srsltid=AfmBOoqZw0BxEcHfk4HShXejOpoaxxS0X45hywW4x-SBkWkzmzEyGTK4">
+                                    <img class="w-[55%] sm:w-[50%] mx-auto" src="https://www.stacker2.com/cdn/shop/files/logo_a1a9cc6d-6781-479a-ac5d-1e7623f5a2a1_130x.png?v=1657198844" alt="Logo 1">
+                                </a>
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <a href="https://www.casabella.com/">
+                                    <img class="w-[55%] sm:w-[50%] mx-auto" src="https://www.casabella.com/media/logo/stores/1/casabella_300_300.png" alt="Logo 2">
+                                </a>
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <a href="https://www.ocedar.com/">
+                                    <img class="w-[55%] sm:w-[50%] mx-auto" src="https://www.ocedar.com/medias/newlogoOCEDAR-copy.png?context=bWFzdGVyfHJvb3R8Mzc5ODl8aW1hZ2UvcG5nfGFETTFMMmd5Wmk4NU1qVTVNVGc1T0RJNU5qWXlMMjVsZDJ4dloyOVBRMFZFUVZJZ1kyOXdlUzV3Ym1jfDk3MzVmYTQxNDM1NWZkYWZhN2QwMjRjM2MxNTM3ZTFlMGEwMzdkMTljMWE5YjI2MmY5NTMyM2E4YmVlYjkzOWI" alt="Logo 3">
+                                </a>
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <a href="https://www.snuggle.com/">
+                                    <img class="w-[55%] sm:w-[50%] mx-auto" src="https://dm.henkel-dam.com/is/image/henkel/snuggle_logo_2253x1777?wid=1680&fmt=webp-alpha&qlt=90&fit=vfit" alt="Logo 4">
+                                </a>
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <a href="https://www.naturesblendshop.com/wholesale/">
+                                    <img class="w-[55%] sm:w-[50%] mx-auto" src="https://www.naturesblendshop.com/wp-content/uploads/2022/12/NB_50-years-Logo2-002.jpg" alt="Logo 5">
+                                </a>
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <a href="https://foodtolive.com/">
+                                    <img class="w-[55%] sm:w-[50%] mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd6gkK896SATBI04ImtUXOG6IjidhitZfDEg&s" alt="Logo 6">
+                                </a>
                             </div>
                         </div>
-                        <div
-                            class="w-[50%] h-[auto] md:-z-1 z-10 md:hidden lg:hidden block absolute -bottom-10 left-20 bg-[#E97524] rounded-xl px-2 py-3 text-white">
-                            <p class="text-xl font-bold"> {{ $data->title }} </p>
-                            <p> {{ $data->des }} </p>
-                        </div>
-                    </div>
-                @endforeach --}}
-
-                <div class="w-[40%] h-auto p-3 rounded shadow-lg shadow-dark-500/90">
-                    <img class="w-full" src="{{ asset('storage/img/uma.png') }}" alt="">
-                    <div>
-                        <p class="mt-2 font-medium">Uma Imports Inc</p>
-                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
-                            voluptate sequi
-                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
-                            neque non consequatur saepe!</p>
+    
+                        <!-- Pagination (dots) and navigation (arrows) -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <div class="w-[40%] h-auto p-3 rounded shadow-lg shadow-dark-500/90">
-                    <img class="w-full" src="{{ asset('storage/img/desi.png') }}" alt="">
-                    <div>
-                        <p class="mt-2 font-medium">Desi Shuttle Service</p>
-                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
-                            voluptate sequi
-                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
-                            neque non consequatur saepe!</p>
-                    </div>
-                </div>
-                <div class="w-[40%] h-auto p-3 rounded shadow-lg shadow-dark-500/90">
-                    <img class="w-full" src="{{ asset('storage/img/pbs.png') }}" alt="">
-                    <div>
-                        <p class="mt-2 font-medium">CRM Software</p>
-                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
-                            voluptate sequi
-                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
-                            neque non consequatur saepe!</p>
-                    </div>
-                </div>
-
             </div>
         </div>
-
     </div>
     {{-- our project section end --}}
 
@@ -158,3 +149,53 @@
     </div>
     {{-- contact form section end --}}
 @endsection
+
+
+ {{-- @foreach ($portfolio as $data)
+                    <div class="w-[350px] h-[400px] bg-[white] rounded-xl relative cursor-pointer bg-cover bg-center bg-no-repeat"
+                        id="project-container" style="background-image: url({{ asset('storage/' . $data->img) }})">
+                        <div class="w-full h-0 md:block lg:block hidden absolute top-0 left-0 bg-[#E97524]  rounded-xl text-white "
+                            id="project-contant">
+                            <div class="w-full h-full flex flex-col justify-end pb-9 px-4">
+                                <h1 class="text-2xl font-bold">{{ $data->title }}</h1>
+                                <p> {{ $data->des }} </p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[50%] h-[auto] md:-z-1 z-10 md:hidden lg:hidden block absolute -bottom-10 left-20 bg-[#E97524] rounded-xl px-2 py-3 text-white">
+                            <p class="text-xl font-bold"> {{ $data->title }} </p>
+                            <p> {{ $data->des }} </p>
+                        </div>
+                    </div>
+                @endforeach --}}
+                {{-- 
+                <div class="md:w-[40%] w-full h-auto p-3 rounded shadow-lg shadow-dark-500/90">
+                    <img class="w-full" src="{{ asset('storage/img/uma.png') }}" alt="">
+                    <div>
+                        <p class="mt-2 font-medium">Uma Imports Inc</p>
+                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
+                            voluptate sequi
+                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
+                            neque non consequatur saepe!</p>
+                    </div>
+                </div>
+                <div class="md:w-[40%] w-full h-auto p-3 rounded shadow-lg shadow-dark-500/90">
+                    <img class="w-full" src="{{ asset('storage/img/desi.png') }}" alt="">
+                    <div>
+                        <p class="mt-2 font-medium">Desi Shuttle Service</p>
+                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
+                            voluptate sequi
+                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
+                            neque non consequatur saepe!</p>
+                    </div>
+                </div>
+                <div class="md:w-[40%] w-full h-auto p-3 rounded shadow-lg shadow-dark-500/90">
+                    <img class="w-full" src="{{ asset('storage/img/pbs.png') }}" alt="">
+                    <div>
+                        <p class="mt-2 font-medium">CRM Software</p>
+                        <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto
+                            voluptate sequi
+                            temporibus autem animi officia sunt expedita quidem qui dolore ipsa labore, harum blanditiis quo
+                            neque non consequatur saepe!</p>
+                    </div>
+                </div> --}}
