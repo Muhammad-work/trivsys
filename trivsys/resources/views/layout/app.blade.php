@@ -41,12 +41,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
-        <!-- Preloader -->
-        {{-- <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake " style="width: 80%; height: 100%;"
-                src="{{ asset('storage/img/logo-1.png') }}" alt="AdminLTELogo" height="60" width="60">
-        </div> --}}
-
+     
         <!-- Navbar -->
         @yield('nav')
         <!-- /.navbar -->

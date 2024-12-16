@@ -81,7 +81,6 @@ class dashboardController extends Controller
             'des' => $req->Description,
         ]);
          
-        $portfolio = 'Hello World';
         return redirect()->route('viewPortfolio')->with(['success' => 'Update Portfolio successfuly']);
 
     }
