@@ -123,18 +123,4 @@ class dashboardController extends Controller
     }
 
 
-    // public function changePasswordFrom(){
-    //     return view('backend.changePassword');
-    // }
-
-    // public function storeChangePassword(Request $req,string $id){
-    //       $req->validate([
-    //          'password' => 'required'
-    //       ]);
-   
-    //      $user = user::find($id);
-    //      $user->password = bcrypt($req->password);
-
-    //      return back()->with(['success' => 'Change Password Successfuly']);
-    // }
 }

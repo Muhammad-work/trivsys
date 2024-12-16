@@ -19,10 +19,8 @@ class generalController extends Controller
         $general = general::find($id);
 
         $req->validate([
-            's_name' => 'required',
             's_title' => 'required',
             's_copyright' => 'required',
-            's_des' => 'required',
             'address' => 'required',
             'phone' => 'required',
             'email' => 'required',
@@ -39,12 +37,15 @@ class generalController extends Controller
             $path =  $general->s_img;
         }
 
+        $sname =  'No Name';
+        $des =  'No Name';
+
         $general->update([
             's_img' => $path,
-            's_name' => $req->s_name,
+            's_name' => $sname,
             's_title' => $req->s_title,
             's_copyright' => $req->s_copyright,
-            's_des' =>  $req->s_des,
+            's_des' =>  $des,
             's_address' => $req->address,
             's_phone' => $req->phone,
             's_email' => $req->email,

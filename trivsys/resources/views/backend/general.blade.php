@@ -58,15 +58,6 @@
                                             src="{{ asset('storage/' . $general->s_img) }}" alt="">
                                     </div>
 
-                                    <div class="col-12">
-                                        <label for="exampleInputEmail1">Site Name</label>
-                                        <input type="text" class="form-control" value="{{ $general->s_name }}"
-                                            name="s_name" id="exampleInputEmail1" placeholder="Enter Site Name">
-                                        @error('s_name')
-                                            <span class="text-danger">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-
                                     <div class="col-12 mt-2">
                                         <label for="exampleInputEmail1">Site Title</label>
                                         <input type="text" class="form-control" value="{{ $general->s_title }}"
@@ -81,16 +72,6 @@
                                         <input type="text" class="form-control" value="{{ $general->s_copyright }}"
                                             name="s_copyright" id="exampleInputEmail1" placeholder="Enter Site Copyright">
                                         @error('s_copyright')
-                                            <span class="text-danger">{{ $message }}</span>
-                                        @enderror
-                                    </div>
-
-
-                                    <div class="col-12 mt-2">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="s_des"
-                                            placeholder="Enter Description"> {{ $general->s_des }} </textarea>
-                                        @error('s_des')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>

@@ -41,7 +41,7 @@ Route::controller(homeController::class)->group(function () {
 
 
 Route::controller(userController::class)->group(function () {
-    Route::get('/dashbord/login', 'viewLoginForm')->name('login');
+    Route::get('/dashboard/login', 'viewLoginForm')->name('login');
     Route::post('/dashbord/storeLoginData', 'storeLoginData')->name('storeLoginData');
     Route::get('/dashbord/logout', 'logout')->name('logout');
 });

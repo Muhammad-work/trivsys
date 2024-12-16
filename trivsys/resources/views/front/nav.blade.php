@@ -19,7 +19,7 @@
                         <li class="p-2 cursor-pointer mt-3 border-b hover:bg-[#EB7422] hover:text-white ease duration-300"><p><a href="{{ route('web') }}">Web Development</a></p></li>
                         <li class="p-2 cursor-pointer mt-3 border-b hover:bg-[#EB7422] hover:text-white ease duration-300"><p><a href="{{ route('app') }}">App Development</a></p></li>
                         <li class="p-2 cursor-pointer mt-3 border-b hover:bg-[#EB7422] hover:text-white ease duration-300"><p><a href="{{ route('digital') }}">Digital Marketing</a></p></li>
-                        <li class="p-2 cursor-pointer mt-3 border-b hover:bg-[#EB7422] hover:text-white ease duration-300"><p><a href="{{ route('erp') }}">ERP Software Servic</a></p></li>
+                        <li class="p-2 cursor-pointer mt-3 border-b hover:bg-[#EB7422] hover:text-white ease duration-300"><p><a href="{{ route('erp') }}">ERP Software</a></p></li>
                         <li class="p-2 cursor-pointer mt-3 border-b hover:bg-[#EB7422] hover:text-white ease duration-300"><p><a href="{{ route('crm') }}">CRM Software </a></p></li>
                     </ul>
                 </li>

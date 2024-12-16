@@ -57,7 +57,7 @@
                     Excellence <br> with Trivisys ERP Solutions
                 </p>
                 <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium  mt-6 block mx-auto">
-                    Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span>
+                    <a href="{{ route('contact') }}">Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span></a>
                 </button>
             </div>
 

@@ -13,7 +13,7 @@
             <h1 class="text-4xl md:text-5xl font-bold text-[#fff]">Through Innovation</h1>
             <div class="w-full md:w-[40%] mt-4">
                 <p class="text-white text-sm md:text-lg">
-                    <span class="font-bold text-[#EB7422]">RetroCube</span> is the global guru in the world of app
+                 <span class="font-bold text-[#EB7422]">Trivsys</span> is the global guru in the world of app
                     development services, leading the way through eccentricity and technological creativity. We excel in
                     creating highly responsive and adaptive apps, providing invigorating user experience across all
                     platforms.
@@ -141,7 +141,7 @@
                         <p class="font-bold text-lg">CRM <br> Software</p>
                         <p class="mt-2">Transform Your Business with Smart, Scalable CRM Solutions.
 
-                            RetroCube offers cutting-edge CRM software that streamlines your operations, boosts customer
+                            Trivsys cutting-edge CRM software that streamlines your operations, boosts customer
                             relationships, and drives growth. Tailored to your needs, our solutions empower you to work
                             smarter, not harder.Experience the difference with solutions designed to scale with your
                             success.</p>
@@ -233,10 +233,10 @@
             <!-- Text and Button -->
             <div class=" md:text-left mt-6 md:mt-0">
                 <p class="text-xl md:text-3xl font-bold text-center  text-white">Expand your horizons and <br> Achieve
-                    Greatness with Retrocube’s ERP Solutions
+                    Greatness with Trivsys ERP Solutions
                 </p>
                 <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium  mt-6 block mx-auto">
-                    Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span>
+                     <a href="{{ route('contact') }}">Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span></a>
                 </button>
             </div>
 
