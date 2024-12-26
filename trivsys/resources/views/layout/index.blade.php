@@ -21,7 +21,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <link rel="shortcut icon" href="{{ asset('storage/'.  $general->s_img ) }}" type="image/x-icon">
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         * {
             font-family: "Poppins", serif;
@@ -477,7 +479,7 @@
 <body class="scroll-smooth">
 
     <!-- loader section start -->
-    <div class="loader-container">
+    {{-- <div class="loader-container">
         <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
             <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000"
                 stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
@@ -488,7 +490,7 @@
             <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000"
                 stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
         </svg>
-    </div>
+    </div> --}}
     <!-- loader section end -->
 
     {{-- nav --}}

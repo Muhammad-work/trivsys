@@ -6,8 +6,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\general;
 use App\Models\portfolio;
+use App\Models\trialCustomer;
 use App\Models\mailRequest;
 use App\Mail\userRequest;
+use App\Mail\trial_customer;
 use Illuminate\Support\Facades\Mail;
 
 class homeController extends Controller
@@ -89,4 +91,40 @@ class homeController extends Controller
         return back()->with(['success' => 'Submit Your Request Successfuly']);
     }
 
+    public function viewTrialForm(){
+        $general = general::get()->first();
+        return view('front.trial_form',compact('general'));
+    }
+
+    public function trialMessage(){
+        $general = general::get()->first();
+        return view('front.trial_message',compact('general'));
+    }
+
+
+    public function storeTrialCustomerdata(Request $req){
+        $req->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+        ]);
+       
+        trialCustomer::create([
+            'name' => $req->name,
+            'email' => $req->email,
+            'phone' => $req->phone,
+        ]);
+
+        $subject = 'Login To ERP ';
+        $message = 'Hello '. $req->name .' Login With This Email And Password!';
+        $detail=[
+            'email' => 'demo123',
+            'password' => 'demo123',
+            'url' => 'https://trivsys.com/web/login'
+        ];
+
+        Mail::to($req->email)->send(new trial_customer($message, $subject,$detail));
+        //  $UserName = $req->name;
+        return redirect()->route('trialMessage');
+    }
 }

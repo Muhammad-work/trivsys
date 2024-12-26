@@ -13,7 +13,7 @@
             <h1 class="text-4xl md:text-5xl font-bold text-[#fff]">Through Innovation</h1>
             <div class="w-full md:w-[40%] mt-4">
                 <p class="text-white text-sm md:text-lg">
-                 <span class="font-bold text-[#EB7422]">Trivsys</span> is the global guru in the world of app
+                    <span class="font-bold text-[#EB7422]">Trivsys</span> is the global guru in the world of app
                     development services, leading the way through eccentricity and technological creativity. We excel in
                     creating highly responsive and adaptive apps, providing invigorating user experience across all
                     platforms.
@@ -108,7 +108,7 @@
     <div class="w-full md:h-auto bg-[#F3F3F3] mt-3 md:py-10 z-30">
         <div class="w-full md:w-[58%] h-auto mx-auto px-4">
             <div>
-                <p class="text-3xl md:text-5xl font-bold text-center uppercase mb-3 relative z-40" id="services">
+                <p class="text-3xl md:text-5xl font-bold text-[#1c1c1c] text-center uppercase mb-3 relative z-40" id="services">
                     Our Service Offerings
                 </p>
             </div>
@@ -215,13 +215,70 @@
                 </a>
             </div>
         </div>
+       
     </div>
 
     {{-- services section end --}}
 
 
+    {{-- our Free Demo Service section start --}}
+
+    <div class="w-full h-auto mt-9">
+        <!-- Title Section -->
+        <div class="w-full h-[100px]">
+            <div class="w-full h-full flex justify-center items-center">
+                <h1 class="font-bold md:text-5xl lg:text-5xl text-2xl text-[#1c1c1c]">OUR FREE DEMO SERVICES</h1>
+            </div>
+        </div>
+
+        <!-- Service Icons Section -->
+        <div class="w-full h-full flex flex-wrap justify-evenly gap-4 px-4 mt-5">
+            <div class="w-[100px] h-[100px] bg-white flex justify-center items-center flex-col gap-1">
+                <a href="https://trivsys.com/trial/request" target="_blank">
+                    <img class="block mx-auto"
+                        src="https://download.odoocdn.com/icons/point_of_sale/static/description/icon.svg"
+                        alt="Point of Sale">
+                    <p>Point of Sale</p>
+                </a>
+            </div>
+            <div class="w-[100px] h-[100px] bg-white flex justify-center items-center flex-col gap-1">
+                <a href="https://trivsys.com/trial/request" target="_blank">
+                    <img class="block mx-auto"
+                        src="https://download.odoocdn.com/icons/purchase/static/description/icon.svg" alt="Purchase">
+                    <p>Purchase</p>
+                </a>
+            </div>
+            <div class="w-[100px] h-[100px] bg-white flex justify-center items-center flex-col gap-1">
+                <a href="https://trivsys.com/trial/request" target="_blank">
+                    <img class="block mx-auto" src="https://download.odoocdn.com/icons/stock/static/description/icon.svg"
+                        alt="Inventory">
+                    <p>Inventory</p>
+                </a>
+
+            </div>
+            <div class="w-[100px] h-[100px] bg-white flex justify-center items-center flex-col gap-1">
+                <img class="block mx-auto" src="https://download.odoocdn.com/icons/mrp/static/description/icon.svg"
+                    alt="Manufacturing">
+                <p>Manufacturing</p>
+            </div>
+            <div class="w-[100px] h-[100px] bg-white flex justify-center items-center flex-col gap-1">
+                <img class="block mx-auto" src="https://download.odoocdn.com/icons/sale/static/description/icon.svg"
+                    alt="Sales">
+                <p>Sales</p>
+            </div>
+        </div>
+
+         <div class='w-full h-[50px]  flex justify-center place-items-center mt-8'>
+             <a href="{{ route('trialForm') }}" class='px-8 py-3 bg-[#E97B31] rounded text-white'>Start Free Demo</a>
+         </div>
+    </div>
+
+
+    {{-- our Free Demo Service section end --}}
+
+
     {{-- Expand your horizons start --}}
-    <div class="w-full h-auto md:h-[550px] flex flex-col justify-center">
+    <div class="w-full h-auto md:h-[550px] flex flex-col justify-center ">
         <div class="w-[90%] md:w-[85%] h-auto md:h-[420px] mx-auto rounded-3xl bg-cover bg-center bg-no-repeat flex flex-col md:flex-row justify-between place-items-center relative px-10 overflow-hidden mt-4"
             style="background-image: url({{ asset('storage/img/bg.gif') }})">
             <!-- Left Image -->
@@ -236,7 +293,8 @@
                     Greatness with Trivsys ERP Solutions
                 </p>
                 <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium  mt-6 block mx-auto">
-                     <a href="{{ route('contact') }}">Contact Us <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i> </span></a>
+                    <a href="{{ route('contact') }}">Contact Us <span class="text-[red]"><i
+                                class="fa-solid fa-arrow-right"></i> </span></a>
                 </button>
             </div>
 

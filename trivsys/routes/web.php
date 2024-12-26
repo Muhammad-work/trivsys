@@ -37,6 +37,9 @@ Route::controller(homeController::class)->group(function () {
     Route::get('/portfoilo', 'viewProfile')->name('portfoilo');
     Route::get('/contact', 'viewContact')->name('contact');
     Route::post('/storeClientDetail', 'storeClientDetail')->name('storeClientDetail');
+    Route::get('/trail', 'viewTrialForm')->name('trialForm');
+    Route::get('/trialMessage', 'trialMessage')->name('trialMessage');
+    Route::post('/storeTrialCustomerdata', 'storeTrialCustomerdata')->name('storeTrialCustomerdata');
 });
 
 
