@@ -5,7 +5,7 @@
 
 @section('home')
     <div class="w-full h-uto  p-3 flex justify-center place-items-center mt-3">
-        <div class="w-[50%] h-full bg-[#E77528] px-3 py-3 rounded">
+        <div class="w-[50%] h-full bg-[#202125] px-3 py-6 rounded">
             <h1 class="text-center text-xl font-bold text-white">Sign Up Now</h1>
             <form action="{{ route('storeTrialCustomerdata') }}" method="POST" autocomplete="off">
                 @csrf
