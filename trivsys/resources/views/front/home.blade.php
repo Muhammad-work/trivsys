@@ -11,7 +11,7 @@
             <h1 class="text-4xl md:text-5xl font-bold text-[#fff]">Revolutionizing</h1>
             <h1 class="text-4xl md:text-5xl font-bold text-[#EB7422] animationText"></h1>
             <h1 class="text-4xl md:text-5xl font-bold text-[#fff]">Through Innovation</h1>
-            <div class="w-full md:w-[40%] mt-4">
+            <div class="w-full md:w-[40%] mt-2">
                 <p class="text-white text-sm md:text-lg">
                     <span class="font-bold text-[#EB7422]">Trivsys</span> is the global guru in the world of app
                     development services, leading the way through eccentricity and technological creativity. We excel in
@@ -51,7 +51,7 @@
 
             <div class="bg-cover bg-center bg-no-repeat w-full h-auto"
                 style="background-image: url({{ asset('storage/img/bg-line2.png') }});">
-                <div class="w-full h-auto lg:h-[50%] flex justify-around place-items-center ">
+                <div class="w-full h-auto lg:h-[50%] md:mt-10 flex justify-around place-items-center ">
                     <div class="text-center mb-5 lg:mb-0 count" data-target="30">
                         <p class="text-5xl mb-3 text-[#eb7422] font-bold" id="count1">0+</p>
                         <p>Countries Served</p>
@@ -61,8 +61,8 @@
                         <p>Active Clients</p>
                     </div>
                 </div>
-                <div class="w-full h-auto lg:h-[50%] flex justify-around place-items-center ">
-                    <div class="text-center mb-5 lg:mb-0 count" data-target="90">
+                <div class="w-full h-auto lg:h-[50%] md:mt-14 flex justify-around place-items-center ">
+                    <div class="text-center mb-3 lg:mb-0 count" data-target="90">
                         <p class="text-5xl mb-3 text-[#eb7422] font-bold" id="count3">0%</p>
                         <p>Client Retention Ratio</p>
                     </div>
@@ -105,7 +105,7 @@
 
 
     {{-- services section start --}}
-    <div class="w-full md:h-auto bg-[#F3F3F3] mt-3 md:py-10 z-30">
+    <div class="w-full md:h-auto bg-[#F3F3F3] mt-3 md:py-10 z-30 p-3">
         <div class="w-full md:w-[58%] h-auto mx-auto px-4">
             <div>
                 <p class="text-3xl md:text-5xl font-bold text-[#1c1c1c] text-center uppercase mb-3 relative z-40" id="services">

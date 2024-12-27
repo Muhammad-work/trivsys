@@ -267,7 +267,7 @@
         }
 
 
-
+/* 
         #services::before {
             position: absolute;
             bottom: 9px;
@@ -283,28 +283,20 @@
         @media (max-width: 768px) {
             #services::before {
                 right: 40px;
-                /* Reduce right positioning */
                 width: 300px;
-                /* Make it smaller on medium screens */
                 height: 12px;
-                /* Adjust height for balance */
                 bottom: 7px;
-                /* Reduce bottom positioning */
             }
         }
 
         @media (max-width: 480px) {
             #services::before {
                 right: 20px;
-                /* Further reduce right positioning on mobile */
                 width: 250px;
-                /* Adjust width for mobile */
                 height: 8px;
-                /* Decrease height */
                 bottom: 5px;
-                /* Slightly smaller bottom positioning */
             }
-        }
+        } */
 
         .app-development {
             height: 150px;
