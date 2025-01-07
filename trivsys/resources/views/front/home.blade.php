@@ -215,7 +215,7 @@
                 </a>
             </div>
         </div>
-       
+
     </div>
 
     {{-- services section end --}}
@@ -223,7 +223,7 @@
 
     {{-- our Free Demo Service section start --}}
 
-    <div class="w-full h-auto mt-9">
+    {{-- <div class="w-full h-auto mt-9">
         <!-- Title Section -->
         <div class="w-full h-[100px]">
             <div class="w-full h-full flex justify-center items-center">
@@ -272,7 +272,7 @@
              <a href="{{ route('trialForm') }}" class='px-8 py-3 bg-[#E97B31] rounded text-white'>Start Free Demo</a>
          </div>
     </div>
-
+ --}}
 
     {{-- our Free Demo Service section end --}}
 
