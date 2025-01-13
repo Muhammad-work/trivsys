@@ -29,11 +29,11 @@ Route::controller(generalController::class)->group(function () {
 Route::controller(homeController::class)->group(function () {
     Route::get('/', 'viewHome')->name('home');
     Route::get('/about-us', 'viewAbout')->name('about');
-    Route::get('/web-servisec', 'viewWebPage')->name('web');
-    Route::get('/app-servisec', 'viewAppPage')->name('app');
+    Route::get('/web-services', 'viewWebPage')->name('web');
+    Route::get('/app-services', 'viewAppPage')->name('app');
     Route::get('/digital-marketing', 'viewdigital')->name('digital');
-    Route::get('/erp-software-servic', 'viewErp')->name('erp');
-    Route::get('/crm-software-servic', 'viewCrm')->name('crm');
+    Route::get('/erp-software-services', 'viewErp')->name('erp');
+    Route::get('/crm-software-services', 'viewCrm')->name('crm');
     Route::get('/portfoilo', 'viewProfile')->name('portfoilo');
     Route::get('/contact', 'viewContact')->name('contact');
     Route::post('/storeClientDetail', 'storeClientDetail')->name('storeClientDetail');
@@ -52,4 +52,3 @@ Route::controller(userController::class)->group(function () {
 
 
 
- 

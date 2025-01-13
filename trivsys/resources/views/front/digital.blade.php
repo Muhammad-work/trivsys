@@ -21,14 +21,14 @@
         }
     </style>
     {{-- Hero section start --}}
+    
     <section class="w-full h-auto md:h-[500px] bg-cover bg-center bg-no-repeat py-6"
         style="background-image: url({{ asset('storage/img/digital.png') }});">
-        <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
+        <div class="flex flex-col md:flex-row justify-around items-start md:items-start">
             <!-- Content Section -->
-            <div
-                class="w-full h-full flex flex-col justify-center items-start gap-3 px-5 md:px-[5%] text-center md:text-left">
-                <h1 class="text-4xl md:text-xl font-medium text-[#fff]">Empower Your Business With Digital Marketing</h1>
-                <h1 class="text-4xl md:text-4xl font-bold text-[#EB7422] animate__animated animate__bounce">
+            <div class="w-full h-full flex flex-col justify-start items-start gap-3 px-5 md:px-[5%] text-left">
+                <h1 class="text-3xl md:text-4xl font-medium text-[#fff]">Empower Your Business With Digital Marketing</h1>
+                <h1 class="text-3xl md:text-4xl font-bold text-[#EB7422] animate__animated animate__bounce">
                     Don't Just Build a <br> Brand, Build an Impact.
                 </h1>
                 <div class="w-full md:w-[100%] mt-3">
@@ -41,9 +41,11 @@
                         data-driven insights to ensure your brand stands out in the digital world.
                     </p>
                 </div>
-                <button class="px-6 py-2 bg-[white] text-md rounded-[20px] font-medium mt-3">
-                    <a href="{{ route('contact') }}">Contact Us</a>
-                    <span class="text-[red]"><i class="fa-solid fa-arrow-right"></i></span>
+                <button class="px-6 py-2 bg-white text-md rounded-[20px] font-medium mt-3 flex items-center justify-start">
+                    <a href="{{ route('contact') }}" class="flex items-center">
+                        <span>Contact Us</span>
+                        <span class="ml-2 text-[red]"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
                 </button>
             </div>
 

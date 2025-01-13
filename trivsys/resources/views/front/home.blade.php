@@ -30,51 +30,45 @@
 
     {{-- Empowering Enterprises section start --}}
 
-    <div class="w-full h-auto flex flex-col lg:flex-row justify-between place-items-center md:gap-3 gap-10 px-5 py-4 mt-3">
+    <div class="w-full h-auto flex flex-col lg:flex-row justify-between items-center md:gap-3 gap-10 px-5 py-4 mt-3">
+        <!-- First Section -->
         <div class="w-full lg:w-[50%] h-auto flex flex-col gap-3" id="one">
-            <p class="text-xl">Empowering Enterprises</p>
-            <p class="text-3xl font-bold text-[#eb7422] animate__animated animate__bounce">Conquer the Digital Frontier with
-                Us</p>
+            <p class="text-xl md:text-2xl">Empowering Enterprises</p>
+            <p class="text-3xl md:text-4xl lg:text-3xl font-bold text-[#eb7422] animate__animated animate__bounce">Conquer the Digital Frontier with Us</p>
             <div>
-                <p>At Trivsys, we don’t just provide solutions – we drive your business from the ground up to new heights.
-                    With our expert guidance, we help you navigate the digital world seamlessly, transforming your business
-                    from its initial phase to thriving success. Through cutting-edge technology and strategic innovation, we
-                    deliver exceptional user experiences and measurable results. Let’s break boundaries together and unlock
-                    your business’s true potential with the power of digital transformation.</p>
+                <p class="text-base md:text-lg lg:text-xl">At Trivsys, we don’t just provide solutions – we drive your business from the ground up to new heights. With our expert guidance, we help you navigate the digital world seamlessly, transforming your business from its initial phase to thriving success. Through cutting-edge technology and strategic innovation, we deliver exceptional user experiences and measurable results. Let’s break boundaries together and unlock your business’s true potential with the power of digital transformation.</p>
             </div>
         </div>
 
+        <!-- Second Section with Image and Stats -->
         <div class="w-full lg:w-[50%] h-auto flex gap-4 flex-col lg:flex-row" id="four">
+            <!-- Image on larger screens -->
             <div class="md:block hidden">
-                <img class="h-[350px] w-full object-cover" src="{{ asset('storage/img/bg-line1.png') }}" alt="">
+                <img class="h-[350px] w-full object-cover" src="{{ asset('storage/img/bg-line1.png') }}" alt="Image 1">
             </div>
 
+            <!-- Background Section with Stats -->
             <div class="bg-cover bg-center bg-no-repeat w-full h-auto"
                 style="background-image: url({{ asset('storage/img/bg-line2.png') }});">
-                <div class="w-full h-auto lg:h-[50%] md:mt-10 flex justify-around place-items-center ">
-                    <div class="text-center mb-5 lg:mb-0 count" data-target="30">
-                        <p class="text-5xl mb-3 text-[#eb7422] font-bold" id="count1">0+</p>
-                        <p>Countries Served</p>
-                    </div>
-                    <div class="text-center mb-5 lg:mb-0 count" data-target="150">
+                <!-- First Stat (Active Clients) -->
+                <div class="w-full h-auto lg:h-[50%] md:mt-10 flex justify-start items-center">
+                    <div class="text-center mb-5 lg:mb-0 count md:ms-[4rem]" data-target="150">
                         <p class="text-5xl mb-3 text-[#eb7422] font-bold" id="count2">0+</p>
-                        <p>Active Clients</p>
+                        <p class="text-xl md:text-2xl">Active Clients</p>
                     </div>
                 </div>
-                <div class="w-full h-auto lg:h-[50%] md:mt-14 flex justify-around place-items-center ">
-                    <div class="text-center mb-3 lg:mb-0 count" data-target="90">
-                        <p class="text-5xl mb-3 text-[#eb7422] font-bold" id="count3">0%</p>
-                        <p>Client Retention Ratio</p>
-                    </div>
-                    <div class="text-center count" data-target="40">
-                        <p class="text-5xl mb-3 text-[#eb7422] font-bold " id="count4">0+</p>
-                        <p>Employees</p>
+
+                <!-- Second Stat (Employees) -->
+                <div class="w-full h-auto lg:h-[50%] md:mt-14 flex justify-end items-center">
+                    <div class="text-center count md:me-[4rem]" data-target="40">
+                        <p class="text-5xl mb-3 text-[#eb7422] font-bold" id="count4">0+</p>
+                        <p class="text-xl md:text-2xl">Employees</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
 
     {{-- Empowering Enterprises section end --}}
 
@@ -452,7 +446,7 @@
                             <p class="text-lg text-white">Products (Apps) Delivered</p>
                         </div>
                         <div>
-                            <h1 class="text-3xl md:text-5xl font-bold text-white">650+</h1>
+                            <h1 class="text-3xl md:text-5xl font-bold text-white">40+</h1>
                             <p class="text-lg text-white">Creative Nerds under one roof</p>
                         </div>
                     </div>
