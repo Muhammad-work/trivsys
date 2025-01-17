@@ -4,6 +4,36 @@
 @extends('front.footer')
 
 @section('home')
+
+<style>
+
+#main-container{
+     position: relative;
+}
+
+#amazon-logo{
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+#shopify-logo{
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+#wordpress-logo{
+    position: absolute;
+    bottom: -100px;
+    right: 20px;
+}
+#daraz-logo{
+    position: absolute;
+    bottom: 130px;
+    right: 20px;
+}
+
+</style>
+
     {{-- Hero section start --}}
     <section class="w-full h-auto md:h-[600px] bg-cover bg-center bg-no-repeat py-6 md:bg-block bg-none"
         style="background-image: url({{ asset('storage/img/section2.gif') }});">
@@ -30,7 +60,7 @@
 
     {{-- Empowering Enterprises section start --}}
 
-    <div class="w-full h-auto flex flex-col lg:flex-row justify-between items-center md:gap-3 gap-10 px-5 py-4 mt-3">
+    {{-- <div class="w-full h-auto flex flex-col lg:flex-row justify-between items-center md:gap-3 gap-10 px-5 py-4 mt-3">
         <!-- First Section -->
         <div class="w-full lg:w-[50%] h-auto flex flex-col gap-3" id="one">
             <p class="text-xl md:text-2xl">Empowering Enterprises</p>
@@ -67,6 +97,25 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+
+    <div class="w-full h-screen bg-[blue]">
+        <div class="w-full h-full bg-[white] d-flex flex-col place-items-center p-5">
+            <div>
+                <h2 class="text-xl uppercase border-[#EE7227] border-2 p-3 rounded-xl">Our ERP Integrations</h2>
+            </div>
+             <h1 class="capitalize text-4xl w-[70%] text-center mt-4 font-bold">amazon, Shopify & all your ecommerce platform integrations in one ERP </h1>
+
+             <div class="d-flex flex-col place-items-center justify-center" >
+                   <div class="w-[25%] h-auto bg-[blue] mt-[8rem]"  id="main-container">
+                      <img class="w-[100%]" src="{{ asset('storage/img/erp-logo.jpeg') }}" alt="">
+                       <img class="w-[60%]" src="{{ asset('storage/img/amazon.png') }}" alt="" id="amazon-logo">
+                       <img class="w-[60%]" src="{{ asset('storage/img/shopify.png') }}" alt="" id="shopify-logo">
+                       <img class="w-[60%]" src="{{ asset('storage/img/postex.png') }}" alt="" id="wordpress-logo">
+                       <img class="w-[60%]" src="{{ asset('storage/img/daraz.png') }}" alt="" id="daraz-logo">
+                   </div>
+             </div>
+        </div>
     </div>
 
 
@@ -102,7 +151,8 @@
     <div class="w-full md:h-auto bg-[#F3F3F3] mt-3 md:py-10 z-30 p-3">
         <div class="w-full md:w-[58%] h-auto mx-auto px-4">
             <div>
-                <p class="text-3xl md:text-5xl font-bold text-[#1c1c1c] text-center uppercase mb-3 relative z-40" id="services">
+                <p class="text-3xl md:text-5xl font-bold text-[#1c1c1c] text-center uppercase mb-3 relative z-40"
+                    id="services">
                     Our Service Offerings
                 </p>
             </div>
@@ -277,8 +327,8 @@
             style="background-image: url({{ asset('storage/img/bg.gif') }})">
             <!-- Left Image -->
             <div class="w-full md:w-auto">
-                <img class="w-full md:w-[100%] h-[auto] md:h-[25rem] mt-6 md:mt-0"
-                    src="{{ asset('storage/img/m1.png') }}" alt="">
+                <img class="w-full md:w-[100%] h-[auto] md:h-[25rem] mt-6 md:mt-0" src="{{ asset('storage/img/m1.png') }}"
+                    alt="">
             </div>
 
             <!-- Text and Button -->
