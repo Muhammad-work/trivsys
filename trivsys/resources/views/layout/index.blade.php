@@ -29,6 +29,7 @@
             font-family: "Poppins", serif;
             font-weight: 400;
             font-style: normal;
+            scroll-behavior: smooth
         }
 
         .loader-container {
@@ -265,7 +266,29 @@
                 stroke-dashoffset: -440;
             }
         }
-
+        .grid-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: linear-gradient(
+            to right,
+            rgba(79, 79, 79, 0.18) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(79, 79, 79, 0.18) 1px,
+            transparent 1px
+          );
+        background-size: 54px 54px;
+        mask-image: radial-gradient(
+          ellipse 60% 50% at 50% 0%,
+          #000 70%,
+          transparent 100%
+        );
+      }
 
 /*
         #services::before {
@@ -503,8 +526,10 @@
     {{-- footer section start --}}
     @yield('fotter')
     {{-- footer section end --}}
-
     <script>
+
+
+
         let menubar = document.querySelector('.menubar');
         let sidebar = document.querySelector('.sidebar');
         let cancelmanu = document.querySelector('.cancel');

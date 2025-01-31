@@ -148,7 +148,7 @@
 
 
     {{-- services section start --}}
-    <div class="w-full md:h-auto bg-[#F3F3F3] mt-3 md:py-10 z-30 p-3">
+    {{-- <div class="w-full md:h-auto bg-[#F3F3F3] mt-3 md:py-10 z-30 p-3">
         <div class="w-full md:w-[58%] h-auto mx-auto px-4">
             <div>
                 <p class="text-3xl md:text-5xl font-bold text-[#1c1c1c] text-center uppercase mb-3 relative z-40"
@@ -260,7 +260,73 @@
             </div>
         </div>
 
-    </div>
+    </div> --}}
+    <section class="w-full bg-white">
+        <div class="flex flex-col md:flex-row justify-between px-4 md:px-16 gap-8">
+          <!-- Left Content -->
+          <div class="grid gap-8">
+            <div class="sticky top-0 h-screen flex items-center">
+              <div class="bg-[#0552A1] text-white w-full max-w-[30rem] rounded-lg rotate-6 p-4 sm:p-6 grid gap-4">
+                <h1 class="text-xl sm:text-2xl font-semibold">App Development</h1>
+                <p class="text-sm sm:text-base">
+                  Crafting Exceptional Android Apps That Captivate and Engage.
+                  We create cutting-edge, feature-rich native apps that deliver
+                  seamless user experiences, keeping your customers hooked and
+                  coming back for.
+                </p>
+                <a href="#" class="w-fit bg-white text-black p-3 rounded-md cursor-pointer">Click to View</a>
+              </div>
+            </div>
+
+            <div class="sticky top-0 h-screen flex items-center">
+              <div class="bg-[#e87627] text-white w-full max-w-[30rem] rounded-lg p-4 sm:p-6 grid gap-4">
+                <h1 class="text-xl sm:text-2xl font-semibold">WEB Development</h1>
+                <p class="text-sm sm:text-base">
+                  Power Your Business with Seamless E-Commerce Solutions.
+                  We deliver cutting-edge e-commerce platforms designed to elevate
+                  your business across all mobile and web interfaces.
+                </p>
+                <a href="#" class="w-fit bg-white text-black p-3 rounded-md cursor-pointer">Click to View</a>
+              </div>
+            </div>
+
+            <div class="sticky top-0 h-screen flex items-center">
+              <div class="bg-[#0053A0] text-white w-full max-w-[30rem] p-4 sm:p-6 rounded-lg -rotate-6 grid gap-4">
+                <h1 class="text-xl sm:text-2xl font-semibold">CRM Software</h1>
+                <p class="text-sm sm:text-base">
+                  Transform Your Business with Smart, Scalable CRM Solutions.
+                  Trivsys cutting-edge CRM software streamlines your operations
+                  and boosts customer relationships.
+                </p>
+                <a href="#" class="w-fit bg-white text-black p-3 rounded-md cursor-pointer">Click to View</a>
+              </div>
+            </div>
+
+            <div class="sticky top-0 h-screen flex items-center">
+              <div class="bg-[#E87627] text-white w-full max-w-[30rem] p-4 sm:p-6 rounded-lg grid gap-4">
+                <h1 class="text-xl sm:text-2xl font-semibold">ERP Software</h1>
+                <p class="text-sm sm:text-base">
+                  Unleash the Power of Seamless Business Management. Our ERP software
+                  streamlines your operations, boosts efficiency, and drives growth.
+                </p>
+                <a href="#" class="w-fit bg-white text-black p-3 rounded-md cursor-pointer">Click to View</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="sticky top-0 h-screen flex flex-col justify-center items-center text-center px-4 md:px-8">
+            <h2 class="text-2xl md:text-4xl font-bold text-[#1c1c1c] uppercase mb-4">Our Service Offerings</h2>
+            <p class="text-sm sm:text-base max-w-[600px]">
+              Unlock the Full Potential of Your Business with Our Expert Solutions.
+              At Trivsys, we craft bespoke, end-to-end solutions that transform
+              your vision into reality. From expert consultation to full-stack
+              app development and beyond, we deliver tailored strategies that align
+              with your goals.
+            </p>
+          </div>
+        </div>
+      </section>
 
     {{-- services section end --}}
 
@@ -374,107 +440,109 @@
 
 
     {{-- baner 1 section start --}}
-    <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] mt-8 relative" id="baner-conatiner">
-        <div class="w-full h-full flex justify-center md:justify-end place-items-center absolute left-0 top-0"
-            id="baner-img" style="background-image: url({{ asset('storage/img/bg2.gif') }})">
-            <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
-                    Powerful ERP Solution!</p>
-                <div class="flex md:flex-row flex-col gap-3">
-                    <div>
-                        <p class="mt-5 text-md  text-white">1. Unify Your Operations with Ease</p>
-                        <p class="mt-2 text-md  text-white">2. All your processes, data, and teams in one powerful
-                            platform.</p>
+        <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] mt-8 relative" id="baner-conatiner">
+            <div class="w-full h-full flex justify-center md:justify-end place-items-center absolute left-0 top-0"
+                id="baner-img" style="background-image: url({{ asset('storage/img/bg2.gif') }})">
+                <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
+                    <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
+                        Powerful ERP Solution!</p>
+                    <div class="flex md:flex-row flex-col gap-3">
+                        <div>
+                            <p class="mt-5 text-md  text-white">1. Unify Your Operations with Ease</p>
+                            <p class="mt-2 text-md  text-white">2. All your processes, data, and teams in one powerful
+                                platform.</p>
+                        </div>
+                        <div>
+                            <p class="mt-5 text-md text-white">3. Maximize Efficiency.</p>
+                            <p class="mt-2 text-md text-white">4. Empower your team with tools that accelerate performance and
+                                drive results.</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="mt-5 text-md text-white">3. Maximize Efficiency.</p>
-                        <p class="mt-2 text-md text-white">4. Empower your team with tools that accelerate performance and
-                            drive results.</p>
+                </div>
+            </div>
+            <div
+                class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
+                <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
+                    <img class="w-[57%]" src="{{ asset('storage/img/bol.gif') }}" alt="">
+                </div>
+                <div class="w-full md:w-[50%] text-center md:text-left">
+                    <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
+                        Powerful ERP Solution!</p>
+                    <div class="w-full  flex md:flex-row flex-col gap-3">
+                        <div>
+                            <p class="mt-5 text-md">1. Unify Your Operations with Ease</p>
+                            <p class="mt-2 text-md ">2. All your processes, data, and teams in one powerful platform.</p>
+                        </div>
+                        <div>
+                            <p class="mt-5 text-md">3. Maximize Efficiency.</p>
+                            <p class="mt-2 text-md">4. Empower your team with tools that accelerate performance and drive
+                                results.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div
-            class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
-            <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
-                <img class="w-[57%]" src="{{ asset('storage/img/bol.gif') }}" alt="">
-            </div>
-            <div class="w-full md:w-[50%] text-center md:text-left">
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Your Business Operations with Our
-                    Powerful ERP Solution!</p>
-                <div class="w-full  flex md:flex-row flex-col gap-3">
-                    <div>
-                        <p class="mt-5 text-md">1. Unify Your Operations with Ease</p>
-                        <p class="mt-2 text-md ">2. All your processes, data, and teams in one powerful platform.</p>
-                    </div>
-                    <div>
-                        <p class="mt-5 text-md">3. Maximize Efficiency.</p>
-                        <p class="mt-2 text-md">4. Empower your team with tools that accelerate performance and drive
-                            results.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     {{-- baner 1 section end --}}
 
 
 
     {{-- baner 2 section start --}}
-    <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] relative" id="baner-conatiner">
-        <div class="w-full h-full flex justify-center md:justify-start place-items-center px-4 md:px-8 absolute left-0 top-0"
-            id="baner-img" style="background-image: url({{ asset('storage/img/baner-3.gif') }})">
-            <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
-                <p class="text-xl text-white">CRM Made Simple</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Customer Interactions, Anytime,
-                    Anywhere.</p>
-                <p class="mt-3 text-white">Building strong customer relationships is essential, not optional</p>
+
+        <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] relative" id="baner-conatiner">
+            <div class="w-full h-full flex justify-center md:justify-start place-items-center px-4 md:px-8 absolute left-0 top-0"
+                id="baner-img" style="background-image: url({{ asset('storage/img/baner-3.gif') }})">
+                <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
+                    <p class="text-xl text-white">CRM Made Simple</p>
+                    <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Customer Interactions, Anytime,
+                        Anywhere.</p>
+                    <p class="mt-3 text-white">Building strong customer relationships is essential, not optional</p>
+                </div>
+            </div>
+            <div
+                class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
+                <div class="w-full md:w-[50%] text-center md:text-left">
+                    <p class="text-xl">CRM Made Simple</p>
+                    <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Customer Interactions, Anytime,
+                        Anywhere.</p>
+                    <p class="mt-3">Building strong customer relationships is essential, not optional</p>
+                </div>
+                <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
+                    <img class="w-[57%]" src="{{ asset('storage/img/baner2.gif') }}" alt="">
+                </div>
             </div>
         </div>
-        <div
-            class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
-            <div class="w-full md:w-[50%] text-center md:text-left">
-                <p class="text-xl">CRM Made Simple</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Streamline Customer Interactions, Anytime,
-                    Anywhere.</p>
-                <p class="mt-3">Building strong customer relationships is essential, not optional</p>
-            </div>
-            <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
-                <img class="w-[57%]" src="{{ asset('storage/img/baner2.gif') }}" alt="">
-            </div>
-        </div>
-    </div>
     {{-- baner 2 section end --}}
 
     {{-- baner 3 section start --}}
-    <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] relative" id="baner-conatiner">
-        <div class="w-full h-full flex justify-center md:justify-end place-items-center px-4 md:px-8 absolute left-0 top-0"
-            id="baner-img" style="background-image: url({{ asset('storage/img/baner-5.gif') }})">
-            <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
-                <p class="text-xl text-white">Build Your Future with Seamless Web Development</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Transform your ideas into reality with ease.
-                </p>
-                <p class="mt-3 text-white">Our platform offers powerful, user-friendly tools for building dynamic websites,
-                    no
-                    technical expertise required. Whether you're launching your first website or enhancing an existing one,
-                    we provide everything you need to create a stunning online presence.</p>
+
+        <div class="w-full md:h-[400px] h-auto bg-[#F3F3F3] relative" id="baner-conatiner ">
+            <div class="w-full h-full flex justify-center md:justify-end place-items-center px-4 md:px-8 absolute left-0 top-0"
+                id="baner-img" style="background-image: url({{ asset('storage/img/baner-5.gif') }})">
+                <div class="w-full md:w-[50%] p-4 md:p-8 text-center md:text-left">
+                    <p class="text-xl text-white">Build Your Future with Seamless Web Development</p>
+                    <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Transform your ideas into reality with ease.
+                    </p>
+                    <p class="mt-3 text-white">Our platform offers powerful, user-friendly tools for building dynamic websites,
+                        no
+                        technical expertise required. Whether you're launching your first website or enhancing an existing one,
+                        we provide everything you need to create a stunning online presence.</p>
+                </div>
+            </div>
+            <div
+                class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
+                <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
+                    <img class="w-[57%]" src="{{ asset('storage/img/baner-4.gif') }}" alt="">
+                </div>
+                <div class="w-full md:w-[50%] text-center md:text-left">
+                    <p class="text-xl">Build Your Future with Seamless Web Development</p>
+                    <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Transform your ideas into reality with ease.
+                    </p>
+                    <p class="mt-3">Our platform offers powerful, user-friendly tools for building dynamic websites, no
+                        technical expertise required. Whether you're launching your first website or enhancing an existing one,
+                        we provide everything you need to create a stunning online presence.</p>
+                </div>
             </div>
         </div>
-        <div
-            class="w-full h-full flex justify-center md:justify-between items-center flex-col md:flex-row px-12 py-4 md:py-0">
-            <div class="w-full md:w-[50%] flex justify-center mb-4 md:mb-0">
-                <img class="w-[57%]" src="{{ asset('storage/img/baner-4.gif') }}" alt="">
-            </div>
-            <div class="w-full md:w-[50%] text-center md:text-left">
-                <p class="text-xl">Build Your Future with Seamless Web Development</p>
-                <p class="text-3xl md:text-4xl mt-3 font-bold text-[#EB7422]">Transform your ideas into reality with ease.
-                </p>
-                <p class="mt-3">Our platform offers powerful, user-friendly tools for building dynamic websites, no
-                    technical expertise required. Whether you're launching your first website or enhancing an existing one,
-                    we provide everything you need to create a stunning online presence.</p>
-            </div>
-        </div>
-    </div>
     {{-- baner 3 section end --}}
 
 
@@ -482,7 +550,7 @@
 
     {{-- product delivery section start  --}}
 
-    <div class="w-full h-auto mt-9 p-3">
+    {{-- <div class="w-full h-auto mt-9 p-3 ">
         <div class="w-[90%] h-auto  mx-auto rounded-3xl bg-cover bg-center bg-no-repeat"
             style="background-image: url({{ asset('storage/img/bg.gif') }})">
             <div class="w-full h-full flex flex-col md:flex-row justify-evenly items-center gap-6 p-4">
@@ -507,86 +575,87 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     {{-- product delivery section end  --}}
 
 
     {{-- contact from section start --}}
-    <div class="w-full h-auto md:h-screen mt-6 py-3" style="background-image: url({{ asset('storage/img/c-bg.jpg') }})">
-        <div class="w-[90%] h-full bg-[#202125] mx-auto rounded-2xl flex flex-col md:flex-row gap-3">
-            <!-- Left Section -->
-            <div class="w-full md:w-[50%] h-auto bg-cover bg-center bg-no-repeat py-3 rounded-xl px-4"
-                style="background-image: url({{ asset('storage/img/contact.jpg') }})">
-                <p class="ms-4 cursor-pointer hover:text-[#EC7329] ease-in-out duration-300 text-dark">
-                    <i class="fa-solid fa-envelope"></i> info@retrocube.com
-                </p>
-                <div class="w-full md:h-[80%] h-auto flex flex-col justify-end mt-6">
-                    <div>
-                        <h1 class="text-3xl md:text-4xl font-bold text-[#6A6D76]">
-                            <span class="text-black">Every Successful</span> <br> Project Begins with a <br> Vision!
-                        </h1>
-                    </div>
-                </div>
-                <div class="w-full h-auto flex items-center gap-3 mt-6">
-                    <i class="fa-brands fa-twitter text-xl md:text-2xl cursor-pointer text-[#1DA1F2] "></i>
-                    <i class="fa-brands fa-facebook text-xl md:text-2xl cursor-pointer text-blue-600"></i>
-                    <i class="fa-brands fa-instagram text-xl md:text-2xl cursor-pointer text-[#E4405F]"></i>
-                    <i class="fa-brands fa-linkedin text-xl md:text-2xl cursor-pointer text-[#0A66C2]"></i>
-                    <i class="fa-brands fa-tiktok text-xl md:text-2xl cursor-pointer text-black"></i>
-                </div>
-            </div>
-
-            <!-- Right Section -->
-            <div class="w-full md:w-[50%] h-auto">
-                <div class="w-[90%] mx-auto py-3">
-                    <h1 class="text-2xl md:text-3xl font-medium text-white">
-                        <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
-                    </h1>
-                    <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
-                    @if (session('success'))
-                        <div class="alert alert-success" role="alert">
-                            <span class="text-[#fff]">{{ session('success') }}</span>
+        <div class="w-full h-auto md:h-screen mt-6 py-3" style="background-image: url({{ asset('storage/img/c-bg.jpg') }})">
+            <div class="w-[90%] h-full bg-[#202125] mx-auto rounded-2xl flex flex-col md:flex-row gap-3">
+                <!-- Left Section -->
+                <div class="w-full md:w-[50%] h-auto bg-cover bg-center bg-no-repeat py-3 rounded-xl px-4"
+                    style="background-image: url({{ asset('storage/img/contact.jpg') }})">
+                    <p class="ms-4 cursor-pointer hover:text-[#EC7329] ease-in-out duration-300 text-dark">
+                        <i class="fa-solid fa-envelope"></i> info@retrocube.com
+                    </p>
+                    <div class="w-full md:h-[80%] h-auto flex flex-col justify-end mt-6">
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold text-[#6A6D76]">
+                                <span class="text-black">Every Successful</span> <br> Project Begins with a <br> Vision!
+                            </h1>
                         </div>
-                    @endif
-                    <div class="w-full flex flex-wrap gap-3 mt-4">
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            Web Development
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            App Development
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            ERP Software
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            CRM Software
-                        </button>
-                        <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
-                            Digital Marketing
-                        </button>
                     </div>
-                    <div class="">
-                        <form action="{{ route('storeClientDetail') }}" method="POST" class="flex flex-col gap-5 mt-6"
-                            autocomplete="off">
-                            @csrf
-                            <input type="hidden" name="service" id="service" value="">
-                            <input type="text" name="full_name" placeholder="Enter Full Name"
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <input type="text" name="email_address" placeholder="Enter Email Address"
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <input type="text" name="phone_number" placeholder="Enter Phone Number"
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <input type="text" name="brief" placeholder="Enter Brief "
-                                class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
-                            <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
-                                Submit Request
+                    <div class="w-full h-auto flex items-center gap-3 mt-6">
+                        <i class="fa-brands fa-twitter text-xl md:text-2xl cursor-pointer text-[#1DA1F2] "></i>
+                        <i class="fa-brands fa-facebook text-xl md:text-2xl cursor-pointer text-blue-600"></i>
+                        <i class="fa-brands fa-instagram text-xl md:text-2xl cursor-pointer text-[#E4405F]"></i>
+                        <i class="fa-brands fa-linkedin text-xl md:text-2xl cursor-pointer text-[#0A66C2]"></i>
+                        <i class="fa-brands fa-tiktok text-xl md:text-2xl cursor-pointer text-black"></i>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="w-full md:w-[50%] h-auto">
+                    <div class="w-[90%] mx-auto py-3">
+                        <h1 class="text-2xl md:text-3xl font-medium text-white">
+                            <span class="text-[#6A6D76]">Which Of our</span> <br> services can support you?
+                        </h1>
+                        <p class="text-[#6A6D76] mt-3">I'm looking for:</p>
+                        @if (session('success'))
+                            <div class="alert alert-success" role="alert">
+                                <span class="text-[#fff]">{{ session('success') }}</span>
+                            </div>
+                        @endif
+                        <div class="w-full flex flex-wrap gap-3 mt-4">
+                            <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                                Web Development
                             </button>
-                        </form>
+                            <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                                App Development
+                            </button>
+                            <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                                ERP Software
+                            </button>
+                            <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                                CRM Software
+                            </button>
+                            <button class="px-4 py-2 border-2 border-[#6A6D76] rounded-xl text-white hover:bg-[#6A6D76] btn">
+                                Digital Marketing
+                            </button>
+                        </div>
+                        <div class="">
+                            <form action="{{ route('storeClientDetail') }}" method="POST" class="flex flex-col gap-5 mt-6"
+                                autocomplete="off">
+                                @csrf
+                                <input type="hidden" name="service" id="service" value="">
+                                <input type="text" name="full_name" placeholder="Enter Full Name"
+                                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                                <input type="text" name="email_address" placeholder="Enter Email Address"
+                                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                                <input type="text" name="phone_number" placeholder="Enter Phone Number"
+                                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                                <input type="text" name="brief" placeholder="Enter Brief "
+                                    class="w-full border-b border-[#ccc] py-2 text-white placeholder:text-[#6A6D76] bg-inherit outline-none">
+                                <button class="bg-[#EB7422] text-lg py-2 rounded text-white hover:bg-[#d0641c] transition">
+                                    Submit Request
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
     {{-- contact from section end --}}
 @endsection
